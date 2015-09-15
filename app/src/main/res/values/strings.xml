@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">QuizAmapola</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_intro_uno">IntroUno</string>
+    <string name="title_activity_intro_dos">IntroDos</string>
+    <string name="title_activity_intro_tres">IntroTres</string>
+    <string name="title_activity_menu_categorias">MenuCategorias</string>
+    <string name="title_activity_preguntas_matematicas_grado_uno">PreguntasMatematicasGradoUno
+    </string>
+    <string name="title_activity_preguntas_ciencias_grado_uno">PreguntasCienciasGradoUno</string>
+    <string name="title_activity_preguntas_geografia_grado_uno">PreguntasGeografiaGradoUno</string>
+    <string name="title_activity_preguntas_lenguaje_grado_uno">PreguntasLenguajeGradoUno</string>
+    <string name="title_activity_preguntas_geografia_grado2">PreguntasGeografiaGrado2</string>
+    <string name="title_activity_preguntas_ciencias_grado2">PreguntasCienciasGrado2</string>
+    <string name="title_activity_preguntas_lenguaje_grado2">PreguntasLenguajeGrado2</string>
+    <string name="title_activity_preguntas_matematicas_grado2">PreguntasMatematicasGrado2</string>
+    <string name="title_activity_preguntas_matematicas_grado3">PreguntasMatematicasGrado3</string>
+    <string name="title_activity_preguntas_lenguaje_grado3">PreguntasLenguajeGrado3</string>
+    <string name="title_activity_preguntas_ciencias_grado3">PreguntasCienciasGrado3</string>
+    <string name="title_activity_preguntas_geografia_grado3">PreguntasGeografiaGrado3</string>
+    <string name="title_activity_preguntas_ciencias_grado4">PreguntasCienciasGrado4</string>
+    <string name="title_activity_preguntas_geografia_grado4">PreguntasGeografiaGrado4</string>
+    <string name="title_activity_preguntas_matematicas_grado4">PreguntasMatematicasGrado4</string>
+    <string name="title_activity_preguntas_lenguaje_grado4">PreguntasLenguajeGrado4</string>
+    <string name="title_activity_preguntas_lenguaje_grado5">PreguntasLenguajeGrado5</string>
+    <string name="title_activity_preguntas_matematicas_grado5">PreguntasMatematicasGrado5</string>
+    <string name="title_activity_preguntas_ciencias_grado5">PreguntasCienciasGrado5</string>
+    <string name="title_activity_preguntas_geografia_grado5">PreguntasGeografiaGrado5</string>
+    <string name="title_activity_lenguaje_introduccion_primer_grado">
+        LenguajeIntroduccionPrimerGrado
+    </string>
+    <string name="title_activity_lenguaje_introduccion_primer_grado_texto">
+        CONTESTA LAS PREGUNTAS 1 A 5 DE ACUERDO CON EL SIGUIENTE TEXTO LA HISTORIA DEL PERRITO
+    </string>
+    <string name="title_activity_resultados_quiz_grado1">ResultadosQuizGrado1</string>
+    <string name="title_activity_lenguaje_introduccion_grado_dos">LenguajeIntroduccionGradoDos
+    </string>
+    <string name="title_activity_resultados_quiz_grado2">ResultadosQuizGrado2</string>
+    <string name="title_activity_resultados_quiz_grado3">ResultadosQuizGrado3</string>
+    <string name="title_activity_lenguaje_introduccion_grado_tres">LenguajeIntroduccionGradoTres
+    </string>
+    <string name="title_activity_lenguaje_introduccion_grado4">LenguajeIntroduccionGrado4</string>
+    <string name="title_activity_resultados_quiz_grado4">ResultadosQuizGrado4</string>
+    <string name="title_activity_lenguaje_introduccion_g5">LenguajeIntroduccionG5</string>
+    <string name="title_activity_resultados_quiz_grado5">ResultadosQuizGrado5</string>
+</resources>

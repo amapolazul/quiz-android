@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado5.PreguntasGeografiaGrado5"
+    android:background="@drawable/fondo">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grado3"
+        android:layout_marginLeft="318dp"
+        android:src="@drawable/grado5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cienciasgrado3"
+        android:src="@drawable/geografiagrado5"
+        android:layout_alignBottom="@+id/grado3"
+        android:layout_toRightOf="@+id/grado3"
+        android:layout_toEndOf="@+id/grado3"
+        android:layout_marginLeft="9dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menugrado3"
+        android:src="@drawable/menugrado5"
+        android:layout_alignTop="@+id/cienciasgrado3"
+        android:layout_toRightOf="@+id/cienciasgrado3"
+        android:layout_toEndOf="@+id/cienciasgrado3"
+        android:layout_marginTop="-3dp"
+        android:layout_marginLeft="9dp"
+        android:onClick="regresar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blanco1"
+        android:src="@drawable/blanco1"
+        android:layout_below="@+id/grado3"
+        android:layout_alignLeft="@+id/grado3"
+        android:layout_alignStart="@+id/grado3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosA"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignLeft="@+id/blanco1"
+        android:layout_alignStart="@+id/blanco1"
+        android:src="@drawable/blanco2"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-5dp"
+        android:onClick="responderConA" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosB"
+        android:src="@drawable/blanco2"
+        android:layout_alignTop="@+id/blancoDosA"
+        android:layout_alignRight="@+id/blanco1"
+        android:layout_alignEnd="@+id/blanco1"
+        android:onClick="responderConB" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosC"
+        android:src="@drawable/blanco2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/blancoDosA"
+        android:layout_alignStart="@+id/blancoDosA"
+        android:onClick="responderConC" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosD"
+        android:src="@drawable/blanco2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/blancoDosB"
+        android:layout_alignStart="@+id/blancoDosB"
+        android:onClick="responderConD" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aG3"
+        android:layout_above="@+id/blancoDosC"
+        android:layout_alignLeft="@+id/blancoDosA"
+        android:layout_alignStart="@+id/blancoDosA"
+        android:src="@drawable/ag5"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="6dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bG3"
+        android:layout_alignBottom="@+id/aG3"
+        android:layout_alignLeft="@+id/blancoDosB"
+        android:layout_alignStart="@+id/blancoDosB"
+        android:src="@drawable/bg5"
+        android:layout_marginLeft="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cG3"
+        android:src="@drawable/cg5"
+        android:layout_alignTop="@+id/blancoDosC"
+        android:layout_alignLeft="@+id/aG3"
+        android:layout_alignStart="@+id/aG3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dG3"
+        android:src="@drawable/dg5"
+        android:layout_alignTop="@+id/blancoDosC"
+        android:layout_alignLeft="@+id/bG3"
+        android:layout_alignStart="@+id/bG3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manoArriba"
+        android:src="@drawable/manoarriba"
+        android:layout_alignBottom="@+id/blancoDosA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manoAbajo"
+        android:layout_below="@+id/manoArriba"
+        android:layout_alignLeft="@+id/manoArriba"
+        android:layout_alignStart="@+id/manoArriba"
+        android:src="@drawable/manoabajo"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/personajepregunta"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/blanco1"
+        android:layout_toStartOf="@+id/blanco1"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/contadorCorrectasGeografiaG5"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:textColor="#ffff057e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/blancoDosA"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/contadorIncorrectasGeografiaG5"
+        android:textColor="#ffff057e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/manoArriba"
+        android:layout_alignLeft="@+id/contadorCorrectasGeografiaG5"
+        android:layout_alignStart="@+id/contadorCorrectasGeografiaG5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/enunciadoGeografiaG5"
+        android:textSize="22dp"
+        android:width="550dp"
+        android:scrollbars = "vertical"
+        android:maxLines="3"
+        android:fadeScrollbars="false"
+        android:layout_toRightOf="@+id/aG3"
+        android:layout_toEndOf="@+id/aG3"
+        android:layout_below="@+id/menugrado3"
+        android:paddingTop="20dp"
+        android:textColor="#ff471cff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaAGeografiaG5"
+        android:layout_above="@+id/manoArriba"
+        android:layout_toRightOf="@+id/aG3"
+        android:layout_toEndOf="@+id/aG3"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaBGeografiaG5"
+        android:layout_above="@+id/manoArriba"
+        android:layout_toRightOf="@+id/bG3"
+        android:layout_toEndOf="@+id/bG3"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaCGeografiaG5"
+        android:layout_alignBottom="@+id/manoAbajo"
+        android:layout_toRightOf="@+id/cG3"
+        android:layout_toEndOf="@+id/cG3"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaDGeografiaG5"
+        android:layout_alignTop="@+id/respuestaCGeografiaG5"
+        android:layout_toRightOf="@+id/dG3"
+        android:layout_toEndOf="@+id/dG3"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp" />
+</RelativeLayout>

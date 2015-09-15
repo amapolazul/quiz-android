@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado3.LenguajeIntroduccionGradoTres"
+    android:background="@drawable/fondo">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grado1"
+        android:layout_marginLeft="318dp"
+        android:layout_marginStart="274dp"
+        android:src="@drawable/grado3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lenguajeGradoUno"
+        android:src="@drawable/lenguajegrado3"
+        android:layout_alignBottom="@+id/grado1"
+        android:layout_toRightOf="@+id/grado1"
+        android:layout_toEndOf="@+id/grado1"
+        android:layout_marginLeft="7dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuGrado1"
+        android:src="@drawable/menugrado3"
+        android:layout_alignBottom="@+id/lenguajeGradoUno"
+        android:layout_toRightOf="@+id/lenguajeGradoUno"
+        android:layout_toEndOf="@+id/lenguajeGradoUno"
+        android:layout_marginLeft="7dp"
+        android:onClick="regresar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blanco1"
+        android:src="@drawable/blanco1"
+        android:layout_below="@+id/grado1"
+        android:layout_alignLeft="@+id/grado1"
+        android:layout_alignStart="@+id/grado1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/personajepregunta"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/blanco1"
+        android:layout_toStartOf="@+id/blanco1"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verLecturaGrado1"
+        android:layout_below="@+id/blanco1"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:src="@drawable/verlectura1"
+        android:layout_marginLeft="8dp"
+        android:clickable="true"
+        android:onClick="mostrarLecturaModal" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verPreguntasGrado1"
+        android:layout_below="@+id/blanco1"
+        android:layout_toRightOf="@+id/verLecturaGrado1"
+        android:layout_toEndOf="@+id/verLecturaGrado1"
+        android:src="@drawable/verpreguntas1"
+        android:layout_marginLeft="-12dp"
+        android:onClick="irAPreguntas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textoLecturaPreguntasG1"
+        android:layout_alignTop="@+id/blanco1"
+        android:layout_alignLeft="@+id/verLecturaGrado1"
+        android:layout_alignStart="@+id/verLecturaGrado1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp" />
+
+</RelativeLayout>

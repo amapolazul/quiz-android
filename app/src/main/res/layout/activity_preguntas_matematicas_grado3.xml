@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado3.PreguntasMatematicasGrado3"
+    android:background="@drawable/fondo">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grado2"
+        android:layout_marginLeft="318dp"
+        android:src="@drawable/grado3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cienciasGrado2"
+        android:src="@drawable/matematicasgrado3"
+        android:layout_alignBottom="@+id/grado2"
+        android:layout_toRightOf="@+id/grado2"
+        android:layout_toEndOf="@+id/grado2"
+        android:layout_marginLeft="7dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuGrado2"
+        android:src="@drawable/menugrado3"
+        android:layout_alignTop="@+id/cienciasGrado2"
+        android:layout_toRightOf="@+id/cienciasGrado2"
+        android:layout_toEndOf="@+id/cienciasGrado2"
+        android:layout_marginTop="-4dp"
+        android:layout_marginLeft="7dp"
+        android:onClick="regresar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blanco1"
+        android:src="@drawable/blanco1"
+        android:layout_below="@+id/grado2"
+        android:layout_alignLeft="@+id/grado2"
+        android:layout_alignStart="@+id/grado2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosA"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignLeft="@+id/blanco1"
+        android:layout_alignStart="@+id/blanco1"
+        android:src="@drawable/blanco2"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-5dp"
+        android:onClick="responderConA" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosB"
+        android:src="@drawable/blanco2"
+        android:layout_alignTop="@+id/blancoDosA"
+        android:layout_alignRight="@+id/blanco1"
+        android:layout_alignEnd="@+id/blanco1"
+        android:onClick="responderConB" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosC"
+        android:src="@drawable/blanco2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/blancoDosA"
+        android:layout_alignStart="@+id/blancoDosA"
+        android:onClick="responderConC" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosD"
+        android:src="@drawable/blanco2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/blancoDosB"
+        android:layout_alignStart="@+id/blancoDosB"
+        android:onClick="responderConD" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aG2"
+        android:layout_above="@+id/blancoDosC"
+        android:layout_alignLeft="@+id/blancoDosA"
+        android:layout_alignStart="@+id/blancoDosA"
+        android:src="@drawable/ag3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="6dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bG2"
+        android:layout_alignBottom="@+id/aG2"
+        android:layout_alignLeft="@+id/blancoDosB"
+        android:layout_alignStart="@+id/blancoDosB"
+        android:src="@drawable/bg3"
+        android:layout_marginLeft="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cG2"
+        android:src="@drawable/cg3"
+        android:layout_alignTop="@+id/blancoDosC"
+        android:layout_alignLeft="@+id/aG2"
+        android:layout_alignStart="@+id/aG2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dG2"
+        android:src="@drawable/dg3"
+        android:layout_alignTop="@+id/blancoDosC"
+        android:layout_alignLeft="@+id/bG2"
+        android:layout_alignStart="@+id/bG2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manoArriba"
+        android:src="@drawable/manoarriba"
+        android:layout_alignBottom="@+id/blancoDosA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manoAbajo"
+        android:layout_below="@+id/manoArriba"
+        android:layout_alignLeft="@+id/manoArriba"
+        android:layout_alignStart="@+id/manoArriba"
+        android:src="@drawable/manoabajo"
+        android:layout_marginTop="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/personajepregunta"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/blanco1"
+        android:layout_toStartOf="@+id/blanco1"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/contadorCorrectasMatematicasG3"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:textColor="#ffff057e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/manoArriba"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/contadorIncorrectasMatematicasG3"
+        android:paddingTop="20dp"
+        android:textColor="#ffff057e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/aG2"
+        android:layout_alignLeft="@+id/contadorCorrectasMatematicasG3"
+        android:layout_alignStart="@+id/contadorCorrectasMatematicasG3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/enunciadoMatematicasG3"
+        android:textSize="22dp"
+        android:width="550dp"
+        android:scrollbars = "vertical"
+        android:maxLines="3"
+        android:fadeScrollbars="false"
+        android:layout_toRightOf="@+id/aG2"
+        android:layout_toEndOf="@+id/aG2"
+        android:layout_below="@+id/grado2"
+        android:paddingTop="20dp"
+        android:textColor="#ff471cff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaAMatematicasG3"
+        android:layout_above="@+id/manoArriba"
+        android:layout_toRightOf="@+id/aG2"
+        android:layout_toEndOf="@+id/aG2"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:width="270dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaCMatematicasG3"
+        android:layout_alignBottom="@+id/manoAbajo"
+        android:layout_toRightOf="@+id/cG2"
+        android:layout_toEndOf="@+id/cG2"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:width="270dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaDMatematicasG3"
+        android:layout_alignTop="@+id/respuestaCMatematicasG3"
+        android:layout_toRightOf="@+id/dG2"
+        android:layout_toEndOf="@+id/dG2"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:width="270dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaBMatematicasG3"
+        android:layout_alignTop="@+id/respuestaAMatematicasG3"
+        android:layout_toRightOf="@+id/bG2"
+        android:layout_toEndOf="@+id/bG2"
+        android:textColor="#ff471cff"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:width="270dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagenMatematicasG3"
+        android:src="@drawable/imagenmuestra"
+        android:layout_above="@+id/blancoDosB"
+        android:layout_alignRight="@+id/menuGrado2"
+        android:layout_alignEnd="@+id/menuGrado2"
+        android:paddingBottom="20dp" />
+
+</RelativeLayout>

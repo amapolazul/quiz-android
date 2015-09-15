@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amapolazul.www.quizamapola" >
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Permission to write to external storage -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".logica.intro.IntroUno"
+            android:label="@string/title_activity_intro_uno"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.intro.IntroDos"
+            android:label="@string/title_activity_intro_dos"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.intro.IntroTres"
+            android:label="@string/title_activity_intro_tres"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.menu.MenuCategorias"
+            android:label="@string/title_activity_menu_categorias"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado1.PreguntasMatematicasGradoUno"
+            android:label="@string/title_activity_preguntas_matematicas_grado_uno"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado1.PreguntasCienciasGradoUno"
+            android:label="@string/title_activity_preguntas_ciencias_grado_uno"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado1.PreguntasGeografiaGradoUno"
+            android:label="@string/title_activity_preguntas_geografia_grado_uno"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado1.PreguntasLenguajeGradoUno"
+            android:label="@string/title_activity_preguntas_lenguaje_grado_uno"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado2.PreguntasGeografiaGrado2"
+            android:label="@string/title_activity_preguntas_geografia_grado2"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado2.PreguntasCienciasGrado2"
+            android:label="@string/title_activity_preguntas_ciencias_grado2"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado2.PreguntasLenguajeGrado2"
+            android:label="@string/title_activity_preguntas_lenguaje_grado2"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado2.PreguntasMatematicasGrado2"
+            android:label="@string/title_activity_preguntas_matematicas_grado2"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado3.PreguntasMatematicasGrado3"
+            android:label="@string/title_activity_preguntas_matematicas_grado3"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado3.PreguntasLenguajeGrado3"
+            android:label="@string/title_activity_preguntas_lenguaje_grado3"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado3.PreguntasCienciasGrado3"
+            android:label="@string/title_activity_preguntas_ciencias_grado3"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado3.PreguntasGeografiaGrado3"
+            android:label="@string/title_activity_preguntas_geografia_grado3"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado4.PreguntasCienciasGrado4"
+            android:label="@string/title_activity_preguntas_ciencias_grado4"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado4.PreguntasGeografiaGrado4"
+            android:label="@string/title_activity_preguntas_geografia_grado4"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado4.PreguntasMatematicasGrado4"
+            android:label="@string/title_activity_preguntas_matematicas_grado4"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado4.PreguntasLenguajeGrado4"
+            android:label="@string/title_activity_preguntas_lenguaje_grado4"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado5.PreguntasLenguajeGrado5"
+            android:label="@string/title_activity_preguntas_lenguaje_grado5"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado5.PreguntasMatematicasGrado5"
+            android:label="@string/title_activity_preguntas_matematicas_grado5"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado5.PreguntasCienciasGrado5"
+            android:label="@string/title_activity_preguntas_ciencias_grado5"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado5.PreguntasGeografiaGrado5"
+            android:label="@string/title_activity_preguntas_geografia_grado5"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado1.LenguajeIntroduccionPrimerGrado"
+            android:label="@string/title_activity_lenguaje_introduccion_primer_grado"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado1.ResultadosQuizGrado1"
+            android:label="@string/title_activity_resultados_quiz_grado1" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado2.LenguajeIntroduccionGradoDos"
+            android:label="@string/title_activity_lenguaje_introduccion_grado_dos" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado2.ResultadosQuizGrado2"
+            android:label="@string/title_activity_resultados_quiz_grado2" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado3.ResultadosQuizGrado3"
+            android:label="@string/title_activity_resultados_quiz_grado3" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado3.LenguajeIntroduccionGradoTres"
+            android:label="@string/title_activity_lenguaje_introduccion_grado_tres" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado4.LenguajeIntroduccionGrado4"
+            android:label="@string/title_activity_lenguaje_introduccion_grado4" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado4.ResultadosQuizGrado4"
+            android:label="@string/title_activity_resultados_quiz_grado4" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado5.LenguajeIntroduccionG5"
+            android:label="@string/title_activity_lenguaje_introduccion_g5" >
+        </activity>
+        <activity
+            android:name=".logica.preguntas.grado5.ResultadosQuizGrado5"
+            android:label="@string/title_activity_resultados_quiz_grado5" >
+        </activity>
+    </application>
+
+</manifest>
