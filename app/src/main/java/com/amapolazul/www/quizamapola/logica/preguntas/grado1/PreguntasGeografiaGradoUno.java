@@ -94,6 +94,7 @@ public class PreguntasGeografiaGradoUno extends Activity {
 
     private void inicializarQuiz(){
         preguntaActual = preguntasGeografiaGradoUno.get(indicePrguntaActual);
+        System.out.println(preguntaActual.getEnunciado());
         TextView enunciado = (TextView) findViewById(R.id.enunciadoGeografiaGradoUno);
         TextView respuestaA = (TextView) findViewById(R.id.respuestaAGeografiaGradoUno);
         TextView respuestaB = (TextView) findViewById(R.id.respuestaBGeografiaGradoUno);
@@ -116,7 +117,7 @@ public class PreguntasGeografiaGradoUno extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoA.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }
@@ -133,7 +134,7 @@ public class PreguntasGeografiaGradoUno extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoB.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }
@@ -150,7 +151,7 @@ public class PreguntasGeografiaGradoUno extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoC.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }
@@ -167,7 +168,7 @@ public class PreguntasGeografiaGradoUno extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoD.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }

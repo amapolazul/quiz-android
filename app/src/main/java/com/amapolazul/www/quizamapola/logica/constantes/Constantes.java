@@ -11,4 +11,7 @@ public class Constantes {
 
     public static String URL_SERVICIOS = "http://10.0.2.2:8080/amapola/api/v1/preguntas";
 
+//    public static String URL_SERVICIOS = "http://192.168.0.12:8080/amapola/api/v1/preguntas";
+
+
 }

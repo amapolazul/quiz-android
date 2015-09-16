@@ -20,49 +20,47 @@
    limitations under the License.
  -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
-    style="@style/lightbox_dialog">
-    
-    <RelativeLayout
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    style="@style/lightbox_dialog"
     android:gravity="center_vertical|center_horizontal">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoModal"
+        android:src="@drawable/blanco3"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/blancoModal"
-            android:src="@drawable/blanco3"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:id="@+id/textoModal"
+        android:layout_alignTop="@+id/blancoModal"
+        android:layout_alignLeft="@+id/blancoModal"
+        android:layout_alignStart="@+id/blancoModal"
+        android:layout_marginTop="95dp"
+        android:gravity="center_vertical"
+        android:background="@color/translucent"
+        android:layout_marginLeft="34dp"
+        android:textSize="30dp"
+        android:scrollbars = "vertical"
+        android:maxLines="7"
+        android:fadeScrollbars="false"
+        android:width="730dp"
+        android:textColor="#ff000000" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Large Text"
-            android:id="@+id/textoModal"
-            android:layout_alignTop="@+id/blancoModal"
-            android:layout_alignLeft="@+id/blancoModal"
-            android:layout_alignStart="@+id/blancoModal"
-            android:layout_marginTop="95dp"
-            android:layout_marginLeft="34dp"
-            android:textSize="30dp"
-            android:scrollbars = "vertical"
-            android:maxLines="7"
-            android:fadeScrollbars="false"
-            android:width="730dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cerrarDialogoLectura"
+        android:src="@drawable/menugrado1"
+        android:layout_alignTop="@+id/blancoModal"
+        android:layout_alignRight="@+id/blancoModal"
+        android:layout_alignEnd="@+id/blancoModal" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/cerrarDialogoLectura"
-            android:src="@drawable/menugrado1"
-            android:layout_alignTop="@+id/blancoModal"
-            android:layout_alignRight="@+id/blancoModal"
-            android:layout_alignEnd="@+id/blancoModal" />
-    </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

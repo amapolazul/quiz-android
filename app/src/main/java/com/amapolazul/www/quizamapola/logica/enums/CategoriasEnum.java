@@ -4,9 +4,9 @@ package com.amapolazul.www.quizamapola.logica.enums;
  * Created by jsmartinez on 22/08/2015.
  */
 public enum CategoriasEnum {
-    CIENCIAS("ciencias"),
+    CIENCIAS("ciencias naturales"),
     MATEMATICAS("matematicas"),
-    GEOGRAFIA("geografia"),
+    GEOGRAFIA("ciencias sociales"),
     LENGUAJE("lenguaje");
 
     private String valor;

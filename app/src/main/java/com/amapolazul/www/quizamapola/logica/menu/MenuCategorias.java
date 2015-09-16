@@ -10,9 +10,13 @@ import android.view.View;
 
 import com.amapolazul.www.quizamapola.R;
 import com.amapolazul.www.quizamapola.logica.contador.Contador;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado1.LenguajeIntroduccionPrimerGrado;
 import com.amapolazul.www.quizamapola.logica.preguntas.grado1.PreguntasCienciasGradoUno;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado1.PreguntasGeografiaGradoUno;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado1.PreguntasLenguajeGradoUno;
 import com.amapolazul.www.quizamapola.logica.preguntas.grado1.PreguntasMatematicasGradoUno;
 import com.amapolazul.www.quizamapola.logica.preguntas.grado2.PreguntasCienciasGrado2;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado2.PreguntasGeografiaGrado2;
 import com.amapolazul.www.quizamapola.logica.preguntas.grado3.PreguntasCienciasGrado3;
 
 public class MenuCategorias extends Activity {
@@ -52,7 +56,7 @@ public class MenuCategorias extends Activity {
     }
 
     public void irAPreguntasGradoUno(View view) {
-        Intent intent = new Intent(this, PreguntasCienciasGradoUno.class);
+        Intent intent = new Intent(this, LenguajeIntroduccionPrimerGrado.class);
         startActivity(intent);
     }
 

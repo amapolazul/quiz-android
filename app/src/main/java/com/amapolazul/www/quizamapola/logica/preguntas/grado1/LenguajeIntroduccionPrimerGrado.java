@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -70,7 +72,8 @@ public class LenguajeIntroduccionPrimerGrado extends Activity {
         busyDialog.setContentView(R.layout.lightbox_dialog);
 
         TextView lecturaGradoUno = (TextView) busyDialog.findViewById(R.id.textoModal);
-        lecturaGradoUno.setText(preguntaActual.getLectura());
+        lecturaGradoUno.setMovementMethod(new ScrollingMovementMethod());
+        lecturaGradoUno.setText(preguntaActual.getLectura().replace("<br>", Html.fromHtml("<br />")));
 
         ImageView dismissDialogImageView = (ImageView)busyDialog.findViewById(R.id.cerrarDialogoLectura);
         dismissDialogImageView.setOnClickListener(new ImageView.OnClickListener() {
