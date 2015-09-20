@@ -194,15 +194,15 @@
         android:text="New Text"
         android:id="@+id/enunciadoCienciasG4"
         android:textSize="20dp"
-        android:width="550dp"
+        android:width="650dp"
         android:scrollbars = "vertical"
-        android:maxLines="3"
+        android:maxLines="7"
         android:fadeScrollbars="false"
-        android:layout_toRightOf="@+id/aG3"
-        android:layout_toEndOf="@+id/aG3"
-        android:layout_below="@+id/grado3"
         android:paddingTop="20dp"
-        android:textColor="#ff471cff" />
+        android:textColor="#ff471cff"
+        android:layout_below="@+id/grado3"
+        android:layout_alignRight="@+id/respuestaBCienciasG4"
+        android:layout_alignEnd="@+id/respuestaBCienciasG4" />
 
     <TextView
         android:layout_width="wrap_content"

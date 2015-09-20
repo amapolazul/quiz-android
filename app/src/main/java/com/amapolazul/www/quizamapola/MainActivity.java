@@ -50,16 +50,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         new HttpServiceManager(this).execute();
-//        try {
-//            //service = new HttpServiceManager();
-////            PreguntasPojo preguntas = service.execute();
-//            //System.out.println(preguntas);
-//
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+
     }
 
     @Override

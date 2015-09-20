@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -94,14 +95,13 @@ public class PreguntasGeografiaGradoUno extends Activity {
 
     private void inicializarQuiz(){
         preguntaActual = preguntasGeografiaGradoUno.get(indicePrguntaActual);
-        System.out.println(preguntaActual.getEnunciado());
         TextView enunciado = (TextView) findViewById(R.id.enunciadoGeografiaGradoUno);
         TextView respuestaA = (TextView) findViewById(R.id.respuestaAGeografiaGradoUno);
         TextView respuestaB = (TextView) findViewById(R.id.respuestaBGeografiaGradoUno);
         TextView respuestaC = (TextView) findViewById(R.id.respuestaCGeografiaGradoUno);
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDGeografiaGradoUno);
 
-        enunciado.setText(preguntaActual.getEnunciado());
+        enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br />")));
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());

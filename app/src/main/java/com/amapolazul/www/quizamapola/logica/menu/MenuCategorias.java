@@ -17,7 +17,13 @@ import com.amapolazul.www.quizamapola.logica.preguntas.grado1.PreguntasLenguajeG
 import com.amapolazul.www.quizamapola.logica.preguntas.grado1.PreguntasMatematicasGradoUno;
 import com.amapolazul.www.quizamapola.logica.preguntas.grado2.PreguntasCienciasGrado2;
 import com.amapolazul.www.quizamapola.logica.preguntas.grado2.PreguntasGeografiaGrado2;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado2.PreguntasMatematicasGrado2;
 import com.amapolazul.www.quizamapola.logica.preguntas.grado3.PreguntasCienciasGrado3;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado3.PreguntasMatematicasGrado3;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado4.PreguntasCienciasGrado4;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado4.PreguntasMatematicasGrado4;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado5.PreguntasCienciasGrado5;
+import com.amapolazul.www.quizamapola.logica.preguntas.grado5.PreguntasMatematicasGrado5;
 
 public class MenuCategorias extends Activity {
 
@@ -56,17 +62,27 @@ public class MenuCategorias extends Activity {
     }
 
     public void irAPreguntasGradoUno(View view) {
-        Intent intent = new Intent(this, LenguajeIntroduccionPrimerGrado.class);
+        Intent intent = new Intent(this, PreguntasMatematicasGradoUno.class);
         startActivity(intent);
     }
 
     public void irAPreguntasGradoDos(View view) {
-        Intent intent = new Intent(this, PreguntasCienciasGrado2.class);
+        Intent intent = new Intent(this, PreguntasMatematicasGrado2.class);
         startActivity(intent);
     }
 
     public void irAPreguntasGradoTres(View view) {
-        Intent intent = new Intent(this, PreguntasCienciasGrado3.class);
+        Intent intent = new Intent(this, PreguntasMatematicasGrado3.class);
+        startActivity(intent);
+    }
+
+    public void irAPreguntasGradoCuatro(View view) {
+        Intent intent = new Intent(this, PreguntasMatematicasGrado4.class);
+        startActivity(intent);
+    }
+
+    public void irAPreguntasGradoCinco(View view) {
+        Intent intent = new Intent(this, PreguntasMatematicasGrado5.class);
         startActivity(intent);
     }
 }

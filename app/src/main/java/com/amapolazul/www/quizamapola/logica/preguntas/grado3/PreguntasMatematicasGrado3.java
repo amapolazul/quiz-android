@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -78,7 +79,7 @@ public class PreguntasMatematicasGrado3 extends Activity {
         TextView respuestaC = (TextView) findViewById(R.id.respuestaCMatematicasG3);
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDMatematicasG3);
 
-        enunciado.setText(preguntaActual.getEnunciado());
+        enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br />")));
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());
@@ -87,7 +88,7 @@ public class PreguntasMatematicasGrado3 extends Activity {
     }
 
     private void inicializarImagen(String url) {
-        int loader = R.mipmap.ic_launcher;
+        int loader = R.drawable.vacia;
         ImageView image = (ImageView) findViewById(R.id.imagenMatematicasG3);
         String image_url = url;
         ImageLoader imgLoader = new ImageLoader(getApplicationContext());

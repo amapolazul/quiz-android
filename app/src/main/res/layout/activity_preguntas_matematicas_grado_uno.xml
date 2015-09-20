@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/grado1"
         android:layout_marginLeft="318dp"
-        android:layout_marginStart="274dp"
+            android:layout_marginStart="274dp"
         android:src="@drawable/grado1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -195,7 +195,7 @@
         android:text="Large Text"
         android:id="@+id/enunciadoMatematicasG1"
         android:textSize="22dp"
-        android:width="550dp"
+        android:width="640dp"
         android:scrollbars = "vertical"
         android:maxLines="3"
         android:fadeScrollbars="false"
@@ -203,7 +203,8 @@
         android:layout_toEndOf="@+id/aG1"
         android:layout_alignTop="@+id/blanco1"
         android:paddingTop="20dp"
-        android:textColor="#ff471cff" />
+        android:textColor="#ff471cff"
+        android:layout_marginLeft="-45dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -215,7 +216,8 @@
         android:paddingBottom="5dp"
         android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG1"
-        android:layout_toEndOf="@+id/aG1" />
+        android:layout_toEndOf="@+id/aG1"
+        android:width="250dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -227,7 +229,8 @@
         android:layout_toEndOf="@+id/bG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp" />
+        android:paddingBottom="5dp"
+        android:width="250dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -235,9 +238,11 @@
         android:text="New Text"
         android:id="@+id/respuestaCMatematicasG2"
         android:textColor="#ff471cff"
-        android:layout_alignTop="@+id/contadorIncorrectasMatematicasG1"
-        android:layout_alignRight="@+id/respuestaMatematicasAG1"
-        android:layout_alignEnd="@+id/respuestaMatematicasAG1" />
+        android:width="250dp"
+        android:layout_alignBottom="@+id/contadorIncorrectasMatematicasG1"
+        android:layout_toRightOf="@+id/cG1"
+        android:layout_toEndOf="@+id/cG1"
+        android:paddingLeft="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -248,7 +253,8 @@
         android:layout_toRightOf="@+id/dG1"
         android:layout_toEndOf="@+id/dG1"
         android:textColor="#ff471cff"
-        android:paddingLeft="5dp" />
+        android:paddingLeft="5dp"
+        android:width="250dp" />
 
     <ImageView
         android:layout_width="wrap_content"

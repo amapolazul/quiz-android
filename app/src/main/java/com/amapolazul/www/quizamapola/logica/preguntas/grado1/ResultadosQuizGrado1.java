@@ -1,13 +1,16 @@
 package com.amapolazul.www.quizamapola.logica.preguntas.grado1;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import com.amapolazul.www.quizamapola.R;
 import com.amapolazul.www.quizamapola.logica.contador.Contador;
+import com.amapolazul.www.quizamapola.logica.menu.MenuCategorias;
 
 public class ResultadosQuizGrado1 extends Activity {
 
@@ -29,6 +32,11 @@ public class ResultadosQuizGrado1 extends Activity {
         resultadosGeografia.setText(String.valueOf(contador.getCorrectasGeografia()));
         resultadosLenguaje.setText(String.valueOf(contador.getCorrectasLenguaje()));
         resultadosMatematicas.setText(String.valueOf(contador.getCorrectasMatematicas()));
+    }
+
+    public void volver(View view){
+        Intent intent = new Intent(this, MenuCategorias.class);
+        startActivity(intent);
     }
 
 

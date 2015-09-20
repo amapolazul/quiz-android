@@ -71,7 +71,7 @@ public class QuizDAO {
         String query = "SELECT * FROM " + QuizSQLiteHelper.NOMBRE_TABLA + " WHERE "
                 + QuizSQLiteHelper.NOMBRE_COLUMNA_CATEGORIA + " = ? " +
                 "AND " +
-                QuizSQLiteHelper.NOMBRE_COLUMNA_GRADO + " = ? ORDER BY " + QuizSQLiteHelper.NOMBRE_COLUMNA_ID_LECTURA;
+                QuizSQLiteHelper.NOMBRE_COLUMNA_GRADO + " = ? ORDER BY " + QuizSQLiteHelper.NOMBRE_COLUMNA_ID;
 
         Cursor c = database.rawQuery(query, new String[]{categoria, grado});
         List<Pregunta> preguntasList = new ArrayList<Pregunta>();

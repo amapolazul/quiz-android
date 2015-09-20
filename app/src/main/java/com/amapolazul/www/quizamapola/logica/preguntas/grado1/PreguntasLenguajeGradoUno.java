@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -113,7 +114,7 @@ public class PreguntasLenguajeGradoUno extends Activity {
         TextView respuestaC = (TextView) findViewById(R.id.respuestaCLenguajeG1);
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDLenguajeG1);
 
-        enunciado.setText(preguntaActual.getEnunciado());
+        enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br />")));
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());
@@ -195,7 +196,8 @@ public class PreguntasLenguajeGradoUno extends Activity {
         busyDialog.setContentView(R.layout.lightbox_dialog);
 
         TextView lecturaGradoUno = (TextView) busyDialog.findViewById(R.id.textoModal);
-        lecturaGradoUno.setText(lecturaPregunta);
+        lecturaGradoUno.setMovementMethod(new ScrollingMovementMethod());
+        lecturaGradoUno.setText(preguntaActual.getLectura().replace("<br>", Html.fromHtml("<br />")));
 
         ImageView dismissDialogImageView = (ImageView)busyDialog.findViewById(R.id.cerrarDialogoLectura);
         dismissDialogImageView.setOnClickListener(new ImageView.OnClickListener() {
@@ -232,7 +234,7 @@ public class PreguntasLenguajeGradoUno extends Activity {
         if(indicePrguntaActual < preguntasLenguajeGradoUno.size()){
             Pregunta pregunta = preguntasLenguajeGradoUno.get(indicePrguntaActual);
             String proximaLectura = pregunta.getLectura();
-            if(proximaLectura.equals(lecturaPregunta)){
+            if(proximaLectura.equals(lecturaPregunta) || proximaLectura.equals("NA")){
                 inicializarQuiz();
             } else {
                 handler.postDelayed(new Runnable() {

@@ -194,7 +194,7 @@
         android:text="New Text"
         android:id="@+id/enunciadoPreguntaLenguajeG2"
         android:textSize="22dp"
-        android:width="550dp"
+        android:width="640dp"
         android:scrollbars = "vertical"
         android:maxLines="3"
         android:fadeScrollbars="false"
@@ -202,7 +202,8 @@
         android:layout_toEndOf="@+id/aG2"
         android:layout_below="@+id/menuGrado2"
         android:paddingTop="20dp"
-        android:textColor="#ff471cff" />
+        android:textColor="#ff471cff"
+        android:layout_marginLeft="-45dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -211,36 +212,38 @@
         android:layout_marginLeft="47dp"
         android:layout_marginStart="52dp"
         android:src="@drawable/verlectura2"
-        android:layout_below="@+id/enunciadoPreguntaLenguajeG2"
         android:layout_alignLeft="@+id/cienciasGrado2"
         android:layout_alignStart="@+id/cienciasGrado2"
-        android:layout_marginTop="55dp"
         android:onClick="mostrarLecturaModalLenguajeG1"
-        android:paddingTop="10dp" />
+        android:paddingTop="116dp"
+        android:layout_alignTop="@+id/enunciadoPreguntaLenguajeG2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaALenguajeG2"
-        android:layout_above="@+id/manoArriba"
-        android:layout_toRightOf="@+id/aG2"
-        android:layout_toEndOf="@+id/aG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp" />
+        android:paddingBottom="5dp"
+        android:width="250dp"
+        android:layout_alignTop="@+id/respuestaBLenguajeG2"
+        android:layout_toRightOf="@+id/aG2"
+        android:layout_toEndOf="@+id/aG2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaBLenguajeG2"
-        android:layout_alignTop="@+id/respuestaALenguajeG2"
-        android:layout_toRightOf="@+id/bG2"
-        android:layout_toEndOf="@+id/bG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp" />
+        android:paddingBottom="5dp"
+        android:width="250dp"
+        android:layout_alignTop="@+id/manoArriba"
+        android:layout_toRightOf="@+id/bG2"
+        android:layout_toEndOf="@+id/bG2"
+        android:layout_marginTop="-28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -248,22 +251,24 @@
         android:text="New Text"
         android:id="@+id/respuestaCLenguajeG2"
         android:textColor="#ff471cff"
-        android:layout_alignBottom="@+id/manoAbajo"
+        android:width="250dp"
         android:layout_toRightOf="@+id/cG2"
         android:layout_toEndOf="@+id/cG2"
-        android:paddingLeft="5dp"
-        android:paddingBottom="5dp" />
+        android:paddingTop="-28dp"
+        android:layout_alignTop="@+id/contadorIncorrectasLenguajeG2"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaDLenguajeG2"
+        android:textColor="#ff471cff"
+        android:width="250dp"
         android:layout_alignTop="@+id/respuestaCLenguajeG2"
         android:layout_toRightOf="@+id/dG2"
         android:layout_toEndOf="@+id/dG2"
-        android:textColor="#ff471cff"
-        android:paddingLeft="5dp"
-        android:paddingBottom="5dp" />
+        android:paddingLeft="5dp" />
 
 </RelativeLayout>

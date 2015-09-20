@@ -47,18 +47,19 @@
         android:gravity="center_vertical"
         android:background="@color/translucent"
         android:layout_marginLeft="34dp"
-        android:textSize="30dp"
+        android:textSize="20dp"
         android:scrollbars = "vertical"
-        android:maxLines="7"
+        android:maxLines="11"
         android:fadeScrollbars="false"
         android:width="730dp"
-        android:textColor="#ff000000" />
+        android:textColor="#ff471cff"
+        android:paddingRight="20dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/cerrarDialogoLectura"
-        android:src="@drawable/menugrado1"
+        android:src="@drawable/volver"
         android:layout_alignTop="@+id/blancoModal"
         android:layout_alignRight="@+id/blancoModal"
         android:layout_alignEnd="@+id/blancoModal" />

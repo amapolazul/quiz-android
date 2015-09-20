@@ -172,15 +172,15 @@
         android:text="text"
         android:id="@+id/enunciadoPregunta"
         android:textSize="22dp"
-        android:width="550dp"
+        android:width="650dp"
         android:scrollbars = "vertical"
-        android:maxLines="3"
+        android:maxLines="7"
         android:fadeScrollbars="false"
         android:paddingTop="20dp"
-        android:layout_toRightOf="@+id/aG1"
-        android:layout_toEndOf="@+id/aG1"
+        android:textColor="#ff471cff"
         android:layout_below="@+id/lenguajeGradoUno"
-        android:textColor="#ff471cff" />
+        android:layout_alignRight="@+id/respuestaBTexto"
+        android:layout_alignEnd="@+id/respuestaBTexto" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -221,7 +221,7 @@
         android:textColor="#ff471cff"
         android:layout_toLeftOf="@+id/blancoDosD"
         android:layout_toStartOf="@+id/blancoDosD"
-        android:width="270dp"/>
+        android:width="250dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -236,7 +236,7 @@
         android:textColor="#ff471cff"
         android:layout_alignRight="@+id/menuGrado1"
         android:layout_alignEnd="@+id/menuGrado1"
-        android:width="270dp"/>
+        android:width="250dp"/>
 
     <TextView
         android:layout_width="wrap_content"

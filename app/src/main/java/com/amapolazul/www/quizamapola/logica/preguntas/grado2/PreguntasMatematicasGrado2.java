@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Bundle;
+import android.text.Html;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -28,7 +29,7 @@ public class PreguntasMatematicasGrado2 extends Activity {
     private QuizDAO quizDao;
     private int indicePrguntaActual;
     private Pregunta preguntaActual;
-    private List<Pregunta> preguntasMatematicasGradoTres;
+    private List<Pregunta> preguntasMatematicasGradoDos;
     private Contador contador;
 
     private TextView contadorCorrectas;
@@ -58,7 +59,7 @@ public class PreguntasMatematicasGrado2 extends Activity {
         try {
             quizDao = new QuizDAO(this);
             quizDao.open();
-            preguntasMatematicasGradoTres = quizDao.darPreguntas(CategoriasEnum.MATEMATICAS.getValor(), "2");
+            preguntasMatematicasGradoDos = quizDao.darPreguntas(CategoriasEnum.MATEMATICAS.getValor(), "2");
             inicializarQuiz();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -71,14 +72,14 @@ public class PreguntasMatematicasGrado2 extends Activity {
     }
 
     private void inicializarQuiz() {
-        preguntaActual = preguntasMatematicasGradoTres.get(indicePrguntaActual);
+        preguntaActual = preguntasMatematicasGradoDos.get(indicePrguntaActual);
         TextView enunciado = (TextView) findViewById(R.id.enunciadoMatematicasG2);
         TextView respuestaA = (TextView) findViewById(R.id.respuestaAMatematicasG2);
         TextView respuestaB = (TextView) findViewById(R.id.respuestaBMatematicasG2);
         TextView respuestaC = (TextView) findViewById(R.id.respuestaCMatematicasG2);
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDMatematicasG2);
 
-        enunciado.setText(preguntaActual.getEnunciado());
+        enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br/>")));
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());
@@ -87,7 +88,7 @@ public class PreguntasMatematicasGrado2 extends Activity {
     }
 
     private void inicializarImagen(String url) {
-        int loader = R.mipmap.ic_launcher;
+        int loader = R.drawable.vacia;
         ImageView image = (ImageView) findViewById(R.id.imagenMatematicasGrado2);
         String image_url = url;
         ImageLoader imgLoader = new ImageLoader(getApplicationContext());
@@ -181,7 +182,7 @@ public class PreguntasMatematicasGrado2 extends Activity {
 
         indicePrguntaActual++;
 
-        if (indicePrguntaActual < preguntasMatematicasGradoTres.size()) {
+        if (indicePrguntaActual < preguntasMatematicasGradoDos.size()) {
             inicializarQuiz();
         } else {
             handler = new Handler();

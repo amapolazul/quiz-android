@@ -36,7 +36,8 @@
         android:layout_alignTop="@+id/cienciasGrado2"
         android:layout_toRightOf="@+id/cienciasGrado2"
         android:layout_toEndOf="@+id/cienciasGrado2"
-        android:layout_marginTop="-5dp" />
+        android:layout_marginTop="-5dp"
+        android:onClick="regresar" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -56,7 +57,8 @@
         android:layout_alignStart="@+id/blanco1"
         android:src="@drawable/blanco2"
         android:layout_marginLeft="2dp"
-        android:layout_marginTop="-5dp" />
+        android:layout_marginTop="-5dp"
+        android:onClick="responderConA" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -65,7 +67,8 @@
         android:src="@drawable/blanco2"
         android:layout_alignTop="@+id/blancoDosA"
         android:layout_alignRight="@+id/blanco1"
-        android:layout_alignEnd="@+id/blanco1" />
+        android:layout_alignEnd="@+id/blanco1"
+        android:onClick="responderConB" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -74,7 +77,8 @@
         android:src="@drawable/blanco2"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/blancoDosA"
-        android:layout_alignStart="@+id/blancoDosA" />
+        android:layout_alignStart="@+id/blancoDosA"
+        android:onClick="responderConC" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -83,7 +87,8 @@
         android:src="@drawable/blanco2"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/blancoDosB"
-        android:layout_alignStart="@+id/blancoDosB" />
+        android:layout_alignStart="@+id/blancoDosB"
+        android:onClick="responderConD" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -189,7 +194,7 @@
         android:text="New Text"
         android:id="@+id/enunciadoMatematicasG2"
         android:textSize="22dp"
-        android:width="550dp"
+        android:width="640dp"
         android:scrollbars = "vertical"
         android:maxLines="3"
         android:fadeScrollbars="false"
@@ -197,7 +202,8 @@
         android:layout_alignStart="@+id/imagenMatematicasGrado2"
         android:layout_below="@+id/grado2"
         android:paddingTop="20dp"
-        android:textColor="#ff471cff" />
+        android:textColor="#ff471cff"
+        android:layout_marginLeft="-45dp" />
 
     <TextView
         android:layout_width="wrap_content"

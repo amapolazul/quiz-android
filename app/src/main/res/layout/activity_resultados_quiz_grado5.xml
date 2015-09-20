@@ -167,4 +167,15 @@
         android:layout_alignStart="@+id/resQuizCienG1"
         android:paddingBottom="7dp" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView21"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/volver"
+        android:paddingRight="10dp"
+        android:onClick="volver" />
+
 </RelativeLayout>
