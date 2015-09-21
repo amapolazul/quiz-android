@@ -212,4 +212,9 @@ public class PreguntasCienciasGrado4 extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        regresar(null);
+    }
 }

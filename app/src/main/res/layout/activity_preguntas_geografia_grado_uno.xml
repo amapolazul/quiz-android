@@ -185,7 +185,7 @@
         android:textStyle="bold"
         android:textColor="#ffff057e"
         android:paddingBottom="5dp"
-        android:layout_alignBottom="@+id/respuestaCGeografiaGradoUno"
+        android:layout_alignBottom="@+id/manoAbajo"
         android:layout_alignLeft="@+id/contadorCorrectasGeografiaGradoUno"
         android:layout_alignStart="@+id/contadorCorrectasGeografiaGradoUno" />
 
@@ -211,13 +211,15 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaAGeografiaGradoUno"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG1"
         android:layout_toEndOf="@+id/aG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="250dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG1"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -229,34 +231,39 @@
         android:layout_toEndOf="@+id/bG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="250dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:layout_alignBottom="@+id/bG1"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaCGeografiaGradoUno"
-        android:layout_alignBottom="@+id/manoAbajo"
         android:layout_toRightOf="@+id/cG1"
         android:layout_toEndOf="@+id/cG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="5dp"
-        android:width="250dp" />
+        android:width="250dp"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignBottom="@+id/cG1"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaDGeografiaGradoUno"
-        android:layout_alignBaseline="@+id/respuestaCGeografiaGradoUno"
         android:layout_alignBottom="@+id/respuestaCGeografiaGradoUno"
         android:layout_toRightOf="@+id/dG1"
         android:layout_toEndOf="@+id/dG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="250dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:layout_alignTop="@+id/respuestaCGeografiaGradoUno"
+        android:paddingTop="28dp" />
 
 </RelativeLayout>

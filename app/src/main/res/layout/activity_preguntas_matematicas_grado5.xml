@@ -5,7 +5,8 @@
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
     tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado5.PreguntasMatematicasGrado5"
-    android:background="@drawable/fondo">
+    android:background="@drawable/fondo"
+    android:onClick="regresar">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -184,9 +185,10 @@
         android:textColor="#ffff057e"
         android:textSize="30dp"
         android:textStyle="bold"
-        android:layout_alignBottom="@+id/respuestaDMatematicasG5"
+        android:layout_alignBottom="@+id/manoAbajo"
         android:layout_alignLeft="@+id/contadorCorrectasMatematicasG5"
-        android:layout_alignStart="@+id/contadorCorrectasMatematicasG5" />
+        android:layout_alignStart="@+id/contadorCorrectasMatematicasG5"
+        android:paddingBottom="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -210,24 +212,30 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaAMatematicasG5"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG3"
         android:layout_toEndOf="@+id/aG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG3"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaBMatematicasG5"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/bG3"
         android:layout_toEndOf="@+id/bG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/respuestaAMatematicasG5"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -236,10 +244,13 @@
         android:id="@+id/respuestaCMatematicasG5"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:layout_alignBottom="@+id/manoAbajo"
+        android:paddingBottom="8dp"
         android:layout_toRightOf="@+id/cG3"
-        android:layout_toEndOf="@+id/cG3" />
+        android:layout_toEndOf="@+id/cG3"
+        android:width="250dp"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignBottom="@+id/cG3"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -250,7 +261,10 @@
         android:paddingLeft="5dp"
         android:layout_alignTop="@+id/respuestaCMatematicasG5"
         android:layout_toRightOf="@+id/dG3"
-        android:layout_toEndOf="@+id/dG3" />
+        android:layout_toEndOf="@+id/dG3"
+        android:width="250dp"
+        android:layout_alignBottom="@+id/dG3"
+        android:paddingTop="28dp" />
 
     <ImageView
         android:layout_width="wrap_content"

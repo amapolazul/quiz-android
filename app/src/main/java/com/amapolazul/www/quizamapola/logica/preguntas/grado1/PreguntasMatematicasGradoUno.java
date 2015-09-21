@@ -220,4 +220,9 @@ public class PreguntasMatematicasGradoUno extends Activity {
             }, 500);
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        regresar(null);
+    }
 }

@@ -210,13 +210,15 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaAMatematicasG2"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG2"
         android:layout_toEndOf="@+id/aG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG2"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -228,8 +230,10 @@
         android:layout_toEndOf="@+id/bG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_alignBottom="@+id/bG2"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -238,11 +242,13 @@
         android:id="@+id/respuestaCMatematicasG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:layout_alignBottom="@+id/manoAbajo"
+        android:paddingBottom="8dp"
         android:layout_toRightOf="@+id/cG2"
         android:layout_toEndOf="@+id/cG2"
-        android:width="270dp" />
+        android:width="270dp"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignBottom="@+id/cG2"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -254,8 +260,10 @@
         android:layout_toEndOf="@+id/dG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_alignBottom="@+id/dG2"
+        android:paddingTop="28dp" />
 
     <ImageView
         android:layout_width="wrap_content"

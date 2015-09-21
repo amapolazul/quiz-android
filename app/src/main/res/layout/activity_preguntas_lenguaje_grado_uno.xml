@@ -37,7 +37,8 @@
         android:layout_alignBottom="@+id/lenguajeGradoUno"
         android:layout_toRightOf="@+id/lenguajeGradoUno"
         android:layout_toEndOf="@+id/lenguajeGradoUno"
-        android:layout_marginLeft="7dp" />
+        android:layout_marginLeft="7dp"
+        android:onClick="regresar" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -210,13 +211,15 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaALenguajeG1"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG1"
         android:layout_toEndOf="@+id/aG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="250dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG1"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -228,8 +231,10 @@
         android:layout_toEndOf="@+id/bG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="250dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:layout_alignBottom="@+id/bG1"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -237,12 +242,14 @@
         android:text="New Text"
         android:id="@+id/respuestaCLenguajeG1"
         android:textColor="#ff471cff"
-        android:layout_alignBottom="@+id/manoAbajo"
         android:layout_toRightOf="@+id/cG1"
         android:layout_toEndOf="@+id/cG1"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="250dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignBottom="@+id/cG1"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -254,8 +261,10 @@
         android:layout_toEndOf="@+id/dG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="250dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:layout_alignBottom="@+id/dG1"
+        android:paddingTop="28dp" />
 
     <ImageView
         android:layout_width="wrap_content"

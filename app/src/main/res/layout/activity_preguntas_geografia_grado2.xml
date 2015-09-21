@@ -193,14 +193,16 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaAGeografiaG2"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
+        android:paddingBottom="8dp"
         android:layout_toLeftOf="@+id/blancoDosB"
         android:layout_toStartOf="@+id/blancoDosB"
-        android:width="270dp" />
+        android:width="270dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG2"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -211,23 +213,27 @@
         android:layout_toRightOf="@+id/bG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
+        android:paddingBottom="8dp"
         android:layout_alignRight="@+id/enunciadoGeografiaG2"
         android:layout_alignEnd="@+id/enunciadoGeografiaG2"
-        android:width="270dp" />
+        android:width="270dp"
+        android:layout_alignBottom="@+id/bG2"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaCGeografiaG2"
-        android:layout_alignTop="@+id/contadorIncorrectasGeografiaG2"
         android:layout_toRightOf="@+id/cG2"
         android:layout_toEndOf="@+id/cG2"
-        android:layout_marginTop="10dp"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:width="270dp" />
+        android:width="270dp"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignBottom="@+id/cG2"
+        android:paddingTop="28dp"
+        android:paddingBottom="8dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -239,7 +245,10 @@
         android:layout_toEndOf="@+id/dG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:width="270dp" />
+        android:width="270dp"
+        android:layout_alignBottom="@+id/dG2"
+        android:paddingTop="28dp"
+        android:paddingBottom="8dp" />
 
     <TextView
         android:layout_width="wrap_content"

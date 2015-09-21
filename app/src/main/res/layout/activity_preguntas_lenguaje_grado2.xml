@@ -225,11 +225,13 @@
         android:id="@+id/respuestaALenguajeG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
+        android:paddingBottom="8dp"
         android:width="250dp"
-        android:layout_alignTop="@+id/respuestaBLenguajeG2"
         android:layout_toRightOf="@+id/aG2"
-        android:layout_toEndOf="@+id/aG2" />
+        android:layout_toEndOf="@+id/aG2"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG2"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -238,12 +240,13 @@
         android:id="@+id/respuestaBLenguajeG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
+        android:paddingBottom="8dp"
         android:width="250dp"
-        android:layout_alignTop="@+id/manoArriba"
         android:layout_toRightOf="@+id/bG2"
         android:layout_toEndOf="@+id/bG2"
-        android:layout_marginTop="-28dp" />
+        android:layout_alignTop="@+id/respuestaALenguajeG2"
+        android:layout_alignBottom="@+id/bG2"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -254,10 +257,11 @@
         android:width="250dp"
         android:layout_toRightOf="@+id/cG2"
         android:layout_toEndOf="@+id/cG2"
-        android:paddingTop="-28dp"
-        android:layout_alignTop="@+id/contadorIncorrectasLenguajeG2"
-        android:layout_marginTop="15dp"
-        android:paddingLeft="5dp" />
+        android:paddingTop="28dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignBottom="@+id/cG2"
+        android:paddingBottom="8dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -269,6 +273,9 @@
         android:layout_alignTop="@+id/respuestaCLenguajeG2"
         android:layout_toRightOf="@+id/dG2"
         android:layout_toEndOf="@+id/dG2"
-        android:paddingLeft="5dp" />
+        android:paddingLeft="5dp"
+        android:layout_alignBottom="@+id/dG2"
+        android:paddingTop="28dp"
+        android:paddingBottom="8dp" />
 
 </RelativeLayout>

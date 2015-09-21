@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.amapolazul.www.quizamapola.logica.constantes.Constantes;
+import com.amapolazul.www.quizamapola.logica.enums.CategoriasEnum;
 import com.amapolazul.www.quizamapola.logica.menu.MenuCategorias;
 import com.amapolazul.www.quizamapola.logica.pojos.PreguntaPojo;
 import com.amapolazul.www.quizamapola.logica.pojos.PreguntasPojo;
@@ -40,6 +41,7 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.nio.charset.Charset;
 import java.sql.SQLException;
+import java.util.List;
 
 
 public class MainActivity extends Activity {
@@ -103,22 +105,24 @@ public class MainActivity extends Activity {
             PreguntasPojo preguntasPojo = null;
             try {
                 quizDao.open();
-                quizDao.removeAll();
-                preguntasPojo = (PreguntasPojo)httpclient.execute(httpget, handler);
-                for(PreguntaPojo preguntaPojo : preguntasPojo.getPreguntaPojos()){
-                    Pregunta pregunta = new Pregunta();
-                    pregunta.setEnunciado(preguntaPojo.getEnunciado());
-                    pregunta.setRespuestaA(preguntaPojo.getRespuestaA());
-                    pregunta.setRespuestaB(preguntaPojo.getRespuestaB());
-                    pregunta.setRespuestaC(preguntaPojo.getRespuestaC());
-                    pregunta.setRespuestaD(preguntaPojo.getRespuestaD());
-                    pregunta.setGrado(preguntaPojo.getGrado());
-                    pregunta.setRespuestaCorrecta(preguntaPojo.getRespuestaCorrecta());
-                    pregunta.setLectura(preguntaPojo.getLectura());
-                    pregunta.setImagen(preguntaPojo.getUrlImagen());
-                    pregunta.setCategoria(preguntaPojo.getCategoria());
-                    System.out.println("agregando pregunta " + preguntaPojo);
-                    quizDao.crearPregunta(pregunta);
+                List<Pregunta> preguntas = quizDao.darPreguntas(CategoriasEnum.CIENCIAS.getValor(), "1");
+                if(preguntas == null) {
+                    preguntasPojo = (PreguntasPojo) httpclient.execute(httpget, handler);
+                    for (PreguntaPojo preguntaPojo : preguntasPojo.getPreguntaPojos()) {
+                        Pregunta pregunta = new Pregunta();
+                        pregunta.setEnunciado(preguntaPojo.getEnunciado());
+                        pregunta.setRespuestaA(preguntaPojo.getRespuestaA());
+                        pregunta.setRespuestaB(preguntaPojo.getRespuestaB());
+                        pregunta.setRespuestaC(preguntaPojo.getRespuestaC());
+                        pregunta.setRespuestaD(preguntaPojo.getRespuestaD());
+                        pregunta.setGrado(preguntaPojo.getGrado());
+                        pregunta.setRespuestaCorrecta(preguntaPojo.getRespuestaCorrecta());
+                        pregunta.setLectura(preguntaPojo.getLectura());
+                        pregunta.setImagen(preguntaPojo.getUrlImagen());
+                        pregunta.setCategoria(preguntaPojo.getCategoria());
+                        System.out.println("agregando pregunta " + preguntaPojo);
+                        quizDao.crearPregunta(pregunta);
+                    }
                 }
                 quizDao.close();
             } catch (IOException e) {

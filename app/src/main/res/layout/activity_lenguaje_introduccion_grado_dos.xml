@@ -37,7 +37,8 @@
         android:layout_alignBottom="@+id/lenguajeGradoUno"
         android:layout_toRightOf="@+id/lenguajeGradoUno"
         android:layout_toEndOf="@+id/lenguajeGradoUno"
-        android:layout_marginLeft="7dp" />
+        android:layout_marginLeft="7dp"
+        android:onClick="regresar" />
 
     <ImageView
         android:layout_width="wrap_content"

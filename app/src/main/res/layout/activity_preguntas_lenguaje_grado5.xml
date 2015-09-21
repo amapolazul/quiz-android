@@ -211,52 +211,60 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaALenguajeG5"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG3"
         android:layout_toEndOf="@+id/aG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_below="@+id/imageView16"
+        android:layout_alignBottom="@+id/aG3"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaBLenguajeG5"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/bG3"
         android:layout_toEndOf="@+id/bG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_below="@+id/imageView16"
+        android:layout_alignBottom="@+id/respuestaALenguajeG5"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaCLenguajeG5"
-        android:layout_alignBottom="@+id/manoAbajo"
         android:layout_toRightOf="@+id/cG3"
         android:layout_toEndOf="@+id/cG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignBottom="@+id/cG3"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaDLenguajeG5"
-        android:layout_alignTop="@+id/respuestaCLenguajeG5"
         android:layout_toRightOf="@+id/dG3"
         android:layout_toEndOf="@+id/dG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_below="@+id/blancoDosB"
+        android:layout_alignBottom="@+id/dG3"
+        android:paddingTop="28dp" />
 
     <ImageView
         android:layout_width="wrap_content"

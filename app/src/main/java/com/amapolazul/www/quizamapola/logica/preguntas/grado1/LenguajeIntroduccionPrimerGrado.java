@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.amapolazul.www.quizamapola.R;
 import com.amapolazul.www.quizamapola.logica.constantes.Constantes;
 import com.amapolazul.www.quizamapola.logica.enums.CategoriasEnum;
+import com.amapolazul.www.quizamapola.logica.menu.MenuCategorias;
 import com.amapolazul.www.quizamapola.persistencia.Pregunta;
 import com.amapolazul.www.quizamapola.persistencia.QuizDAO;
 
@@ -55,6 +56,11 @@ public class LenguajeIntroduccionPrimerGrado extends Activity {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public void regresar(View view){
+        Intent intent = new Intent(this, MenuCategorias.class);
+        startActivity(intent);
     }
 
     private void inicializarModal(){
@@ -108,5 +114,10 @@ public class LenguajeIntroduccionPrimerGrado extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        regresar(null);
     }
 }

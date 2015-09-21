@@ -5,7 +5,8 @@
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
     tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado3.PreguntasMatematicasGrado3"
-    android:background="@drawable/fondo">
+    android:background="@drawable/fondo"
+    android:onClick="regresar">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -211,26 +212,30 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaAMatematicasG3"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG2"
         android:layout_toEndOf="@+id/aG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG2"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaCMatematicasG3"
-        android:layout_alignBottom="@+id/manoAbajo"
         android:layout_toRightOf="@+id/cG2"
         android:layout_toEndOf="@+id/cG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignBottom="@+id/cG2"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -242,8 +247,10 @@
         android:layout_toEndOf="@+id/dG2"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="270dp" />
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_alignBottom="@+id/dG2"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -254,9 +261,11 @@
         android:layout_toRightOf="@+id/bG2"
         android:layout_toEndOf="@+id/bG2"
         android:textColor="#ff471cff"
-        android:paddingBottom="5dp"
+        android:paddingBottom="8dp"
         android:paddingLeft="5dp"
-        android:width="270dp" />
+        android:width="270dp"
+        android:layout_alignBottom="@+id/bG2"
+        android:paddingTop="30dp" />
 
     <ImageView
         android:layout_width="wrap_content"

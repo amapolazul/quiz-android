@@ -5,7 +5,8 @@
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
     tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado1.PreguntasMatematicasGradoUno"
-    android:background="@drawable/fondo">
+    android:background="@drawable/fondo"
+    android:onClick="regresar">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -213,11 +214,13 @@
         android:id="@+id/respuestaMatematicasAG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:layout_above="@+id/manoArriba"
+        android:paddingBottom="8dp"
         android:layout_toRightOf="@+id/aG1"
         android:layout_toEndOf="@+id/aG1"
-        android:width="250dp" />
+        android:width="250dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG1"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -229,8 +232,9 @@
         android:layout_toEndOf="@+id/bG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="5dp"
-        android:width="250dp" />
+        android:paddingBottom="8dp"
+        android:width="250dp"
+        android:paddingTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -239,22 +243,28 @@
         android:id="@+id/respuestaCMatematicasG2"
         android:textColor="#ff471cff"
         android:width="250dp"
-        android:layout_alignBottom="@+id/contadorIncorrectasMatematicasG1"
         android:layout_toRightOf="@+id/cG1"
         android:layout_toEndOf="@+id/cG1"
-        android:paddingLeft="5dp" />
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignBottom="@+id/cG1"
+        android:paddingTop="28dp"
+        android:paddingBottom="8dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaDMatematicasG1"
-        android:layout_alignTop="@+id/respuestaCMatematicasG2"
         android:layout_toRightOf="@+id/dG1"
         android:layout_toEndOf="@+id/dG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:width="250dp" />
+        android:width="250dp"
+        android:layout_alignBottom="@+id/dG1"
+        android:paddingTop="28dp"
+        android:paddingBottom="8dp"
+        android:layout_below="@+id/blancoDosB" />
 
     <ImageView
         android:layout_width="wrap_content"

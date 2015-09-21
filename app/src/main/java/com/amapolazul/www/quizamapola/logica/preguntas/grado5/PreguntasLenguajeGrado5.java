@@ -256,4 +256,9 @@ public class PreguntasLenguajeGrado5 extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        regresar(null);
+    }
 }

@@ -61,4 +61,9 @@ public class ResultadosQuizGrado3 extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        volver(null);
+    }
 }

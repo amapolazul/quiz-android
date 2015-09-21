@@ -150,39 +150,48 @@
         </activity>
         <activity
             android:name=".logica.preguntas.grado1.ResultadosQuizGrado1"
-            android:label="@string/title_activity_resultados_quiz_grado1" >
+            android:label="@string/title_activity_resultados_quiz_grado1"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".logica.preguntas.grado2.LenguajeIntroduccionGradoDos"
-            android:label="@string/title_activity_lenguaje_introduccion_grado_dos" >
+            android:label="@string/title_activity_lenguaje_introduccion_grado_dos"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".logica.preguntas.grado2.ResultadosQuizGrado2"
-            android:label="@string/title_activity_resultados_quiz_grado2" >
+            android:label="@string/title_activity_resultados_quiz_grado2"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".logica.preguntas.grado3.ResultadosQuizGrado3"
-            android:label="@string/title_activity_resultados_quiz_grado3" >
+            android:label="@string/title_activity_resultados_quiz_grado3"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".logica.preguntas.grado3.LenguajeIntroduccionGradoTres"
-            android:label="@string/title_activity_lenguaje_introduccion_grado_tres" >
+            android:label="@string/title_activity_lenguaje_introduccion_grado_tres"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".logica.preguntas.grado4.LenguajeIntroduccionGrado4"
-            android:label="@string/title_activity_lenguaje_introduccion_grado4" >
+            android:label="@string/title_activity_lenguaje_introduccion_grado4"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".logica.preguntas.grado4.ResultadosQuizGrado4"
-            android:label="@string/title_activity_resultados_quiz_grado4" >
+            android:label="@string/title_activity_resultados_quiz_grado4"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".logica.preguntas.grado5.LenguajeIntroduccionG5"
-            android:label="@string/title_activity_lenguaje_introduccion_g5" >
+            android:label="@string/title_activity_lenguaje_introduccion_g5"
+            android:screenOrientation="landscape">
         </activity>
         <activity
             android:name=".logica.preguntas.grado5.ResultadosQuizGrado5"
-            android:label="@string/title_activity_resultados_quiz_grado5" >
+            android:label="@string/title_activity_resultados_quiz_grado5"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 

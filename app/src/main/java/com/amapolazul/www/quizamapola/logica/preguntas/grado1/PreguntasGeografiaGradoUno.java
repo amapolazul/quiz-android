@@ -202,4 +202,9 @@ public class PreguntasGeografiaGradoUno extends Activity {
             startActivity(intent);
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        regresar(null);
+    }
 }

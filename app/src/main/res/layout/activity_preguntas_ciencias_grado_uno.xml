@@ -187,13 +187,15 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaATexto"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG1"
-        android:paddingLeft="10dp"
+        android:paddingLeft="5dp"
         android:paddingBottom="10dp"
         android:textColor="#ff471cff"
         android:layout_toLeftOf="@+id/blancoDosB"
-        android:layout_toStartOf="@+id/blancoDosB" />
+        android:layout_toStartOf="@+id/blancoDosB"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG1"
+        android:paddingTop="35dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -202,41 +204,47 @@
         android:id="@+id/respuestaBTexto"
         android:layout_alignTop="@+id/respuestaATexto"
         android:layout_toRightOf="@+id/bG1"
-        android:paddingLeft="10dp"
+        android:paddingLeft="5dp"
         android:textSize="15dp"
         android:textColor="#ff471cff"
         android:layout_alignRight="@+id/menuGrado1"
-        android:layout_alignEnd="@+id/menuGrado1" />
+        android:layout_alignEnd="@+id/menuGrado1"
+        android:layout_alignBottom="@+id/bG1"
+        android:paddingTop="35dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaCText"
-        android:layout_alignBottom="@+id/manoAbajo"
         android:layout_toRightOf="@+id/cG1"
-        android:paddingLeft="10dp"
-        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="8dp"
         android:textSize="15dp"
         android:textColor="#ff471cff"
         android:layout_toLeftOf="@+id/blancoDosD"
         android:layout_toStartOf="@+id/blancoDosD"
-        android:width="250dp"/>
+        android:width="250dp"
+        android:layout_alignBottom="@+id/cG1"
+        android:layout_below="@+id/blancoDosA"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaTextoD"
-        android:layout_alignBaseline="@+id/respuestaCText"
-        android:layout_alignBottom="@+id/respuestaCText"
         android:layout_toRightOf="@+id/dG1"
-        android:paddingLeft="10dp"
+        android:paddingLeft="5dp"
         android:textSize="15dp"
         android:textColor="#ff471cff"
         android:layout_alignRight="@+id/menuGrado1"
         android:layout_alignEnd="@+id/menuGrado1"
-        android:width="250dp"/>
+        android:width="250dp"
+        android:layout_alignBottom="@+id/dG1"
+        android:layout_below="@+id/manoArriba"
+        android:paddingBottom="8dp"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"

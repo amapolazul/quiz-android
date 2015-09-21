@@ -209,4 +209,9 @@ public class PreguntasCienciasGrado3 extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onBackPressed() {
+        regresar(null);
+    }
 }

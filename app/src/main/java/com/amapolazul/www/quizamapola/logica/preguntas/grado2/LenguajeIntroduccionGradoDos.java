@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.amapolazul.www.quizamapola.R;
 import com.amapolazul.www.quizamapola.logica.constantes.Constantes;
 import com.amapolazul.www.quizamapola.logica.enums.CategoriasEnum;
+import com.amapolazul.www.quizamapola.logica.menu.MenuCategorias;
 import com.amapolazul.www.quizamapola.logica.preguntas.grado1.PreguntasLenguajeGradoUno;
 import com.amapolazul.www.quizamapola.persistencia.Pregunta;
 import com.amapolazul.www.quizamapola.persistencia.QuizDAO;
@@ -30,6 +31,11 @@ public class LenguajeIntroduccionGradoDos extends Activity {
     private String indicePreguntaString;
     private int indicePregunta;
     private List<Pregunta> preguntasLenguajeGradoDos;
+
+    public void regresar(View view){
+        Intent intent = new Intent(this, MenuCategorias.class);
+        startActivity(intent);
+    }
 
     private void inicializarModal(){
         preguntaActual = preguntasLenguajeGradoDos.get(indicePregunta);
@@ -110,5 +116,10 @@ public class LenguajeIntroduccionGradoDos extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        regresar(null);
     }
 }

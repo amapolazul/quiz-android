@@ -211,13 +211,15 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaACienciasG3"
-        android:layout_above="@+id/manoArriba"
         android:layout_toRightOf="@+id/aG3"
         android:layout_toEndOf="@+id/aG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:paddingBottom="10dp"
-        android:width="270dp"/>
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG3"
+        android:paddingTop="35dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -229,20 +231,25 @@
         android:layout_toEndOf="@+id/bG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:width="270dp"/>
+        android:width="270dp"
+        android:layout_alignBottom="@+id/bG3"
+        android:paddingTop="35dp"
+        android:paddingBottom="8dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaCCienciasG3"
-        android:layout_alignBottom="@+id/manoAbajo"
         android:layout_toRightOf="@+id/cG3"
         android:layout_toEndOf="@+id/cG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="5dp"
-        android:width="270dp"/>
+        android:width="270dp"
+        android:layout_alignBottom="@+id/cG3"
+        android:layout_below="@+id/blancoDosA"
+        android:paddingTop="28dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -254,6 +261,8 @@
         android:layout_toEndOf="@+id/dG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
-        android:width="270dp"/>
+        android:width="270dp"
+        android:paddingTop="28dp"
+        android:layout_alignBottom="@+id/dG3" />
 
 </RelativeLayout>
