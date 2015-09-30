@@ -5,8 +5,7 @@
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
     tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado4.ResultadosQuizGrado4"
-    android:background="@drawable/fondocomun"
-    android:onClick="volver">
+    android:background="@drawable/fondocomun">
 
     <ImageView
         android:layout_width="wrap_content"
@@ -176,7 +175,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:src="@drawable/volver"
-        android:paddingRight="10dp" />
+        android:paddingRight="10dp"
+        android:onClick="volver" />
 
 
 </RelativeLayout>

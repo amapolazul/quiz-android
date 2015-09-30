@@ -2,11 +2,14 @@ package com.amapolazul.www.quizamapola.logica.menu;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 import com.amapolazul.www.quizamapola.R;
 import com.amapolazul.www.quizamapola.logica.contador.Contador;
@@ -29,6 +32,8 @@ public class MenuCategorias extends Activity {
 
     private Contador contador;
 
+    private Animation animation;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +41,8 @@ public class MenuCategorias extends Activity {
 
         contador = Contador.getInstance();
         contador.reiniciarContador();
+
+        animation = AnimationUtils.loadAnimation(this, R.anim.scaleanim);
     }
 
 
@@ -62,27 +69,65 @@ public class MenuCategorias extends Activity {
     }
 
     public void irAPreguntasGradoUno(View view) {
-        Intent intent = new Intent(this, PreguntasMatematicasGradoUno.class);
-        startActivity(intent);
+        view.startAnimation(animation);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGradoUno.class);
+                startActivity(intent);
+            }
+        }, 1500);
+
     }
 
     public void irAPreguntasGradoDos(View view) {
-        Intent intent = new Intent(this, PreguntasMatematicasGrado2.class);
-        startActivity(intent);
+        view.startAnimation(animation);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGrado2.class);
+                startActivity(intent);
+            }
+        }, 1500);
     }
 
     public void irAPreguntasGradoTres(View view) {
-        Intent intent = new Intent(this, PreguntasMatematicasGrado3.class);
-        startActivity(intent);
+        view.startAnimation(animation);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGrado3.class);
+                startActivity(intent);
+            }
+        }, 1500);
+
     }
 
     public void irAPreguntasGradoCuatro(View view) {
-        Intent intent = new Intent(this, PreguntasMatematicasGrado4.class);
-        startActivity(intent);
+        view.startAnimation(animation);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGrado4.class);
+                startActivity(intent);
+            }
+        }, 1500);
+
     }
 
     public void irAPreguntasGradoCinco(View view) {
-        Intent intent = new Intent(this, PreguntasMatematicasGrado5.class);
-        startActivity(intent);
+        view.startAnimation(animation);
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGrado5.class);
+                startActivity(intent);
+            }
+        }, 1500);
     }
 }

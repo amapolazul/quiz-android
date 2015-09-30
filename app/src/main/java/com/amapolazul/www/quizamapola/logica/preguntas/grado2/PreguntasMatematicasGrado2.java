@@ -80,6 +80,7 @@ public class PreguntasMatematicasGrado2 extends Activity {
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDMatematicasG2);
 
         enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br/>")));
+        enunciado.scrollTo(0,0);
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());

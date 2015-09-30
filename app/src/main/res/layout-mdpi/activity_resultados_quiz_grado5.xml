@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado5.ResultadosQuizGrado5"
+    android:background="@drawable/fondocomun">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/personaje"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/quizlogo"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:src="@drawable/grado5"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_toStartOf="@+id/imageView2"
+        android:layout_marginTop="60dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:src="@drawable/matematicasgrado5"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imageView4"
+        android:layout_toStartOf="@+id/imageView4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5"
+        android:src="@drawable/lenguajegrado5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/imageView6"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6"
+        android:src="@drawable/cienciasgrado5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView8"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView7"
+        android:src="@drawable/geografiagrado5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView9"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:src="@drawable/manoarriba" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView10"
+        android:src="@drawable/manoarriba"
+        android:layout_above="@+id/imageView7"
+        android:layout_alignLeft="@+id/imageView9"
+        android:layout_alignStart="@+id/imageView9"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView11"
+        android:src="@drawable/manoarriba"
+        android:layout_above="@+id/imageView8"
+        android:layout_alignLeft="@+id/imageView10"
+        android:layout_alignStart="@+id/imageView10"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView12"
+        android:src="@drawable/manoarriba"
+        android:layout_alignBottom="@+id/imageView8"
+        android:layout_alignLeft="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView11"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/resQuizMateG1"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/imageView9"
+        android:layout_alignEnd="@+id/imageView9"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"
+        android:textColor="#ffff057e"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/resQuizLengG1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#ffff057e"
+        android:paddingBottom="5dp"
+        android:layout_alignBottom="@+id/imageView10"
+        android:layout_alignLeft="@+id/resQuizMateG1"
+        android:layout_alignStart="@+id/resQuizMateG1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/resQuizCienG1"
+        android:textColor="#ffff057e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/imageView11"
+        android:layout_alignLeft="@+id/resQuizLengG1"
+        android:layout_alignStart="@+id/resQuizLengG1"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/resQuizGeoG1"
+        android:textColor="#ffff057e"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/imageView12"
+        android:layout_alignLeft="@+id/resQuizCienG1"
+        android:layout_alignStart="@+id/resQuizCienG1"
+        android:paddingBottom="7dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView21"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/volver"
+        android:paddingRight="10dp"
+        android:onClick="volver" />
+
+</RelativeLayout>

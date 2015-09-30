@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.amapolazul.www.quizamapola.logica.menu.MenuCategorias"
+    android:background="@drawable/fondocomun">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/personajeMenu"
+        android:src="@drawable/personaje"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizLogoIntro"
+        android:src="@drawable/quizlogo"
+        android:layout_marginRight="76dp"
+        android:layout_marginEnd="76dp"
+        android:layout_alignTop="@+id/personajeMenu"
+        android:layout_toLeftOf="@+id/personajeMenu"
+        android:layout_toStartOf="@+id/personajeMenu"
+        android:layout_marginTop="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grado1Imagen"
+        android:src="@drawable/grado1imagen"
+        android:clickable="true"
+        android:onClick="irAPreguntasGradoUno"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/grado3Imagen" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grado2Imagen"
+        android:layout_alignTop="@+id/grado1Imagen"
+        android:layout_toRightOf="@+id/grado1Imagen"
+        android:layout_toEndOf="@+id/grado1Imagen"
+        android:src="@drawable/grado2imagen"
+        android:onClick="irAPreguntasGradoDos"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grado3Imagen"
+        android:src="@drawable/grado3imagen"
+        android:onClick="irAPreguntasGradoTres"
+        android:clickable="true"
+        android:layout_above="@+id/grado5Imagen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grado4Imagen"
+        android:src="@drawable/grado4imagen"
+        android:layout_alignTop="@+id/grado3Imagen"
+        android:layout_alignLeft="@+id/grado2Imagen"
+        android:layout_alignStart="@+id/grado2Imagen"
+        android:onClick="irAPreguntasGradoCuatro" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grado5Imagen"
+        android:src="@drawable/grado5imagen"
+        android:onClick="irAPreguntasGradoCinco"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/quizLogoIntro"
+        android:layout_alignEnd="@+id/quizLogoIntro" />
+</RelativeLayout>

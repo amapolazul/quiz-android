@@ -80,6 +80,7 @@ public class PreguntasGeografiaGrado4 extends Activity {
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDGeografiaG4);
 
         enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br />")));
+        enunciado.scrollTo(0,0);
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());
@@ -112,7 +113,7 @@ public class PreguntasGeografiaGrado4 extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoB.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }
@@ -129,7 +130,7 @@ public class PreguntasGeografiaGrado4 extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoC.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }
@@ -146,7 +147,7 @@ public class PreguntasGeografiaGrado4 extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoD.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }

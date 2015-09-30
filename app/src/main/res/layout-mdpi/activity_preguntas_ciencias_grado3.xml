@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado3.PreguntasCienciasGrado3"
+    android:background="@drawable/fondo">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grado3"
+        android:layout_marginLeft="203dp"
+        android:src="@drawable/grado3"
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/manoArriba"
+        android:layout_toEndOf="@+id/manoArriba"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cienciasgrado3"
+        android:src="@drawable/cienciasgrado3"
+        android:layout_alignBottom="@+id/grado3"
+        android:layout_toRightOf="@+id/grado3"
+        android:layout_toEndOf="@+id/grado3"
+        android:layout_marginLeft="9dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menugrado3"
+        android:src="@drawable/menugrado3"
+        android:layout_alignTop="@+id/cienciasgrado3"
+        android:layout_toRightOf="@+id/cienciasgrado3"
+        android:layout_toEndOf="@+id/cienciasgrado3"
+        android:layout_marginTop="-3dp"
+        android:layout_marginLeft="9dp"
+        android:onClick="regresar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blanco1"
+        android:src="@drawable/blanco1"
+        android:layout_below="@+id/grado3"
+        android:layout_alignLeft="@+id/grado3"
+        android:layout_alignStart="@+id/grado3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosA"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignLeft="@+id/blanco1"
+        android:layout_alignStart="@+id/blanco1"
+        android:src="@drawable/blanco2"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-5dp"
+        android:onClick="responderConA" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosB"
+        android:src="@drawable/blanco2"
+        android:layout_alignTop="@+id/blancoDosA"
+        android:layout_alignRight="@+id/blanco1"
+        android:layout_alignEnd="@+id/blanco1"
+        android:onClick="responderConB" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosC"
+        android:src="@drawable/blanco2"
+        android:onClick="responderConC"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignLeft="@+id/blanco1"
+        android:layout_alignStart="@+id/blanco1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blancoDosD"
+        android:src="@drawable/blanco2"
+        android:onClick="responderConD"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignLeft="@+id/blancoDosB"
+        android:layout_alignStart="@+id/blancoDosB" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aG3"
+        android:src="@drawable/ag3"
+        android:layout_alignTop="@+id/blancoDosA"
+        android:layout_alignLeft="@+id/blancoDosA"
+        android:layout_alignStart="@+id/blancoDosA"
+        android:layout_marginLeft="15dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bG3"
+        android:layout_alignBottom="@+id/aG3"
+        android:layout_alignLeft="@+id/blancoDosB"
+        android:layout_alignStart="@+id/blancoDosB"
+        android:src="@drawable/bg3"
+        android:layout_marginLeft="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cG3"
+        android:src="@drawable/cg3"
+        android:layout_alignTop="@+id/blancoDosC"
+        android:layout_alignLeft="@+id/aG3"
+        android:layout_alignStart="@+id/aG3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dG3"
+        android:src="@drawable/dg3"
+        android:layout_alignTop="@+id/blancoDosC"
+        android:layout_alignLeft="@+id/bG3"
+        android:layout_alignStart="@+id/bG3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manoArriba"
+        android:src="@drawable/manoarriba"
+        android:layout_below="@+id/aG3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manoAbajo"
+        android:src="@drawable/manoabajo"
+        android:layout_alignBottom="@+id/cG3"
+        android:layout_toLeftOf="@+id/grado3"
+        android:layout_toStartOf="@+id/grado3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/personajepregunta"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/blanco1"
+        android:layout_toStartOf="@+id/blanco1"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/contadorCorrectasCienciasG3"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:textSize="30dp"
+        android:textColor="#ffff057e"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/aG3"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/contadorIncorrectasCienciasG3"
+        android:textSize="30dp"
+        android:textColor="#ffff057e"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/manoAbajo"
+        android:layout_alignLeft="@+id/contadorCorrectasCienciasG3"
+        android:layout_alignStart="@+id/contadorCorrectasCienciasG3"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="new text"
+        android:id="@+id/enunciadoCienciasG3"
+        android:textSize="27dp"
+        android:width="650dp"
+        android:scrollbars = "vertical"
+        android:maxLines="7"
+        android:fadeScrollbars="false"
+        android:textColor="#ff471cff"
+        android:layout_alignTop="@+id/blanco1"
+        android:layout_alignLeft="@+id/blancoDosA"
+        android:layout_alignStart="@+id/blancoDosA"
+        android:layout_alignRight="@+id/menugrado3"
+        android:layout_alignEnd="@+id/menugrado3"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaACienciasG3"
+        android:layout_toRightOf="@+id/aG3"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:paddingBottom="8dp"
+        android:width="270dp"
+        android:layout_below="@+id/blanco1"
+        android:layout_alignBottom="@+id/aG3"
+        android:paddingTop="35dp"
+        android:textSize="17dp"
+        android:layout_toLeftOf="@+id/blancoDosB"
+        android:layout_toStartOf="@+id/blancoDosB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaBCienciasG3"
+        android:layout_alignTop="@+id/respuestaACienciasG3"
+        android:layout_toRightOf="@+id/bG3"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:width="270dp"
+        android:layout_alignBottom="@+id/bG3"
+        android:paddingTop="35dp"
+        android:paddingBottom="8dp"
+        android:layout_alignRight="@+id/enunciadoCienciasG3"
+        android:layout_alignEnd="@+id/enunciadoCienciasG3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaCCienciasG3"
+        android:layout_toRightOf="@+id/cG3"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:width="270dp"
+        android:layout_alignBottom="@+id/cG3"
+        android:layout_below="@+id/blancoDosA"
+        android:paddingTop="28dp"
+        android:layout_alignRight="@+id/respuestaACienciasG3"
+        android:layout_alignEnd="@+id/respuestaACienciasG3"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/respuestaDCienciasG3"
+        android:layout_alignTop="@+id/respuestaCCienciasG3"
+        android:layout_toRightOf="@+id/dG3"
+        android:textColor="#ff471cff"
+        android:paddingLeft="5dp"
+        android:width="270dp"
+        android:paddingTop="28dp"
+        android:layout_alignBottom="@+id/dG3"
+        android:layout_alignRight="@+id/respuestaBCienciasG3"
+        android:layout_alignEnd="@+id/respuestaBCienciasG3"
+        android:textSize="17dp" />
+
+</RelativeLayout>
