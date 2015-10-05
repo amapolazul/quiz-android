@@ -96,7 +96,7 @@ public class PreguntasGeografiaGrado2 extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoA.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }
@@ -113,7 +113,7 @@ public class PreguntasGeografiaGrado2 extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoB.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }
@@ -130,7 +130,7 @@ public class PreguntasGeografiaGrado2 extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoC.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }
@@ -147,7 +147,7 @@ public class PreguntasGeografiaGrado2 extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoD.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }

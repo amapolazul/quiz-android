@@ -96,7 +96,7 @@ public class PreguntasGeografiaGrado4 extends Activity {
             sonidoCorrecto.start();
         } else {
             contador.aumetarGeogragiaIncorrectas();
-            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectasCiencias()));
+            contadorIncorrectas.setText(String.valueOf(contador.getIncorrectaGeografia()));
             blancoA.setImageResource(R.drawable.rojo1);
             sonidoIncorrecta.start();
         }

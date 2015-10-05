@@ -202,8 +202,8 @@
         android:layout_alignLeft="@+id/aG1"
         android:layout_alignStart="@+id/aG1"
         android:paddingLeft="30dp"
-        android:layout_alignRight="@+id/imagenMatematicasG1"
-        android:layout_alignEnd="@+id/imagenMatematicasG1" />
+        android:layout_alignRight="@+id/respuestaBMatematicasG1"
+        android:layout_alignEnd="@+id/respuestaBMatematicasG1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -280,10 +280,10 @@
         android:src="@drawable/imagenmuestra"
         android:paddingBottom="20dp"
         android:paddingRight="20dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
         android:layout_above="@+id/blancoDosB"
         android:layout_alignLeft="@+id/respuestaMatematicasAG1"
-        android:layout_alignStart="@+id/respuestaMatematicasAG1"
-        android:layout_marginLeft="54dp"
-        android:layout_marginStart="54dp" />
+        android:layout_alignStart="@+id/respuestaMatematicasAG1" />
 
 </RelativeLayout>

@@ -69,65 +69,65 @@ public class MenuCategorias extends Activity {
     }
 
     public void irAPreguntasGradoUno(View view) {
-        view.startAnimation(animation);
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
+//        view.startAnimation(animation);
+//        Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
                 Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGradoUno.class);
                 startActivity(intent);
-            }
-        }, 1500);
+//            }
+//        }, 1500);
 
     }
 
     public void irAPreguntasGradoDos(View view) {
-        view.startAnimation(animation);
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
+//        view.startAnimation(animation);
+//        Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
                 Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGrado2.class);
                 startActivity(intent);
-            }
-        }, 1500);
+//            }
+//        }, 1500);
     }
 
     public void irAPreguntasGradoTres(View view) {
-        view.startAnimation(animation);
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
+//        view.startAnimation(animation);
+//        Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
                 Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGrado3.class);
                 startActivity(intent);
-            }
-        }, 1500);
+//            }
+//        }, 1500);
 
     }
 
     public void irAPreguntasGradoCuatro(View view) {
-        view.startAnimation(animation);
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
+//        view.startAnimation(animation);
+//        Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
                 Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGrado4.class);
                 startActivity(intent);
-            }
-        }, 1500);
+//            }
+//        }, 1500);
 
     }
 
     public void irAPreguntasGradoCinco(View view) {
-        view.startAnimation(animation);
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
+//        view.startAnimation(animation);
+//        Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
                 Intent intent = new Intent(MenuCategorias.this, PreguntasMatematicasGrado5.class);
                 startActivity(intent);
-            }
-        }, 1500);
+//            }
+//        }, 1500);
     }
 }
