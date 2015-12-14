@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.amapolazul.www.quizamapola.MainActivity;
 import com.amapolazul.www.quizamapola.R;
 
 public class IntroDos extends Activity {
@@ -29,7 +30,7 @@ public class IntroDos extends Activity {
                     e.printStackTrace();
                 }
                 System.out.println("mostrando esta vaina final por favor funciona dos");
-                Intent i = new Intent(IntroDos.this, IntroTres.class);
+                Intent i = new Intent(IntroDos.this, MainActivity.class);
                 startActivity(i);
                 finish();
                 overridePendingTransition(R.anim.mainfadein, R.anim.mainfadeout);
