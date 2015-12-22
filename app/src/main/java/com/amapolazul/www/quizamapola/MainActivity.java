@@ -1,6 +1,7 @@
 package com.amapolazul.www.quizamapola;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -46,11 +47,17 @@ import java.util.List;
 
 public class MainActivity extends Activity {
 
+    private ProgressDialog progress;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        progress = new ProgressDialog(this);
+        progress.setMessage("Cargando preguntas");
+        progress.setTitle("Quiz");
+        progress.show();
         new HttpServiceManager(this).execute();
 
     }
@@ -105,6 +112,7 @@ public class MainActivity extends Activity {
             PreguntasPojo preguntasPojo = null;
             try {
                 quizDao.open();
+//                quizDao.removeAll();
                 List<Pregunta> preguntas = quizDao.darPreguntas(CategoriasEnum.CIENCIAS.getValor(), "1");
                 if(preguntas == null) {
                     preguntasPojo = (PreguntasPojo) httpclient.execute(httpget, handler);
@@ -125,6 +133,7 @@ public class MainActivity extends Activity {
                     }
                 }
                 quizDao.close();
+                progress.dismiss();
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (SQLException e) {

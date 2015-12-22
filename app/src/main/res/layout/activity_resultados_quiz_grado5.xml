@@ -22,12 +22,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageView3"
         android:src="@drawable/quizlogo"
-        android:layout_alignTop="@+id/imageView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="75dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="-10dp" />
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignStart="@+id/imageView5" />
 
     <ImageView
         android:layout_width="wrap_content"

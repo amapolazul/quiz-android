@@ -11,13 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/grado1"
-        android:layout_marginLeft="318dp"
-        android:layout_marginStart="274dp"
+        android:layout_marginLeft="400dp"
+        android:layout_marginStart="400dp"
         android:src="@drawable/grado1"
+        android:layout_marginTop="50dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginBottom="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -63,24 +64,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/verLecturaGrado1"
+        android:src="@drawable/verlectura1"
+        android:clickable="true"
+        android:onClick="mostrarLecturaModal"
         android:layout_below="@+id/blanco1"
         android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView"
-        android:src="@drawable/verlectura1"
-        android:layout_marginLeft="8dp"
-        android:clickable="true"
-        android:onClick="mostrarLecturaModal" />
+        android:layout_toEndOf="@+id/imageView" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/verPreguntasGrado1"
-        android:layout_below="@+id/blanco1"
-        android:layout_toRightOf="@+id/verLecturaGrado1"
-        android:layout_toEndOf="@+id/verLecturaGrado1"
         android:src="@drawable/verpreguntas1"
-        android:layout_marginLeft="-12dp"
-        android:onClick="irAPreguntas" />
+        android:onClick="irAPreguntas"
+        android:layout_alignTop="@+id/verLecturaGrado1"
+        android:layout_toRightOf="@+id/verLecturaGrado1"
+        android:layout_toEndOf="@+id/verLecturaGrado1" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -88,12 +87,12 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/textoLecturaPreguntasG1"
-        android:layout_alignTop="@+id/imageView"
         android:layout_alignLeft="@+id/verLecturaGrado1"
         android:layout_alignStart="@+id/verLecturaGrado1"
-        android:layout_marginLeft="45dp"
+        android:layout_marginLeft="46dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="-20dp" />
+        android:layout_below="@+id/grado1"
+        android:layout_marginTop="48dp" />
 
 
 </RelativeLayout>

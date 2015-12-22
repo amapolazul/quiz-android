@@ -11,13 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/grado1"
-        android:layout_marginLeft="318dp"
-        android:layout_marginStart="274dp"
+        android:layout_marginLeft="193dp"
+        android:layout_marginStart="193dp"
         android:src="@drawable/grado1"
+        android:layout_marginTop="52dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_toRightOf="@+id/manoArriba"
+        android:layout_toEndOf="@+id/manoArriba"
+        android:layout_marginBottom="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -76,32 +77,30 @@
         android:layout_height="wrap_content"
         android:id="@+id/blancoDosC"
         android:src="@drawable/blanco2"
-        android:layout_alignParentBottom="true"
+        android:onClick="responderConC"
+        android:layout_below="@+id/blancoDosA"
         android:layout_alignLeft="@+id/blancoDosA"
-        android:layout_alignStart="@+id/blancoDosA"
-        android:onClick="responderConC" />
+        android:layout_alignStart="@+id/blancoDosA" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/blancoDosD"
         android:src="@drawable/blanco2"
-        android:layout_alignParentBottom="true"
+        android:onClick="responderConD"
+        android:layout_alignTop="@+id/blancoDosC"
         android:layout_alignLeft="@+id/blancoDosB"
-        android:layout_alignStart="@+id/blancoDosB"
-        android:onClick="responderConD" />
+        android:layout_alignStart="@+id/blancoDosB" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/aG1"
-        android:layout_above="@+id/blancoDosC"
+        android:src="@drawable/ag1"
+        android:layout_alignTop="@+id/blancoDosA"
         android:layout_alignLeft="@+id/blancoDosA"
         android:layout_alignStart="@+id/blancoDosA"
-        android:src="@drawable/ag1"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginBottom="6dp" />
+        android:layout_marginLeft="15dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -136,20 +135,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/manoArriba"
         android:src="@drawable/manoarriba"
-        android:layout_alignBottom="@+id/blancoDosA"
+        android:layout_below="@+id/aG1"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="8dp" />
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/manoAbajo"
-        android:layout_below="@+id/manoArriba"
-        android:layout_alignLeft="@+id/manoArriba"
-        android:layout_alignStart="@+id/manoArriba"
         android:src="@drawable/manoabajo"
-        android:layout_marginTop="5dp" />
+        android:layout_alignBottom="@+id/cG1"
+        android:layout_alignLeft="@+id/manoArriba"
+        android:layout_alignStart="@+id/manoArriba" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -166,15 +163,15 @@
         android:layout_height="wrap_content"
         android:text="0"
         android:id="@+id/contadorCorrectasGeografiaGradoUno"
-        android:layout_marginLeft="42dp"
-        android:layout_marginStart="42dp"
         android:textColor="#ffff057e"
         android:textStyle="bold"
         android:textSize="30dp"
-        android:layout_alignBottom="@+id/blancoDosA"
+        android:paddingBottom="10dp"
+        android:layout_alignTop="@+id/blancoDosC"
         android:layout_alignLeft="@+id/imageView"
         android:layout_alignStart="@+id/imageView"
-        android:paddingBottom="5dp" />
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -184,7 +181,7 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#ffff057e"
-        android:paddingBottom="5dp"
+        android:paddingBottom="10dp"
         android:layout_alignBottom="@+id/manoAbajo"
         android:layout_alignLeft="@+id/contadorCorrectasGeografiaGradoUno"
         android:layout_alignStart="@+id/contadorCorrectasGeografiaGradoUno" />
@@ -194,17 +191,19 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/enunciadoGeografiaGradoUno"
-        android:textSize="22dp"
+        android:textSize="27dp"
         android:width="640dp"
         android:scrollbars = "vertical"
         android:maxLines="3"
         android:fadeScrollbars="false"
         android:layout_toRightOf="@+id/aG1"
-        android:layout_toEndOf="@+id/aG1"
         android:layout_alignTop="@+id/blanco1"
-        android:paddingTop="20dp"
+        android:paddingTop="30dp"
         android:textColor="#ff471cff"
-        android:layout_marginLeft="-45dp" />
+        android:layout_marginLeft="-45dp"
+        android:layout_alignRight="@+id/menuGrado1"
+        android:layout_alignEnd="@+id/menuGrado1"
+        android:paddingLeft="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -212,14 +211,16 @@
         android:text="New Text"
         android:id="@+id/respuestaAGeografiaGradoUno"
         android:layout_toRightOf="@+id/aG1"
-        android:layout_toEndOf="@+id/aG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="8dp"
         android:width="250dp"
         android:layout_below="@+id/blanco1"
         android:layout_alignBottom="@+id/aG1"
-        android:paddingTop="30dp" />
+        android:paddingTop="40dp"
+        android:layout_alignRight="@+id/respuestaCGeografiaGradoUno"
+        android:layout_alignEnd="@+id/respuestaCGeografiaGradoUno"
+        android:textSize="17dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -228,13 +229,15 @@
         android:id="@+id/respuestaBGeografiaGradoUno"
         android:layout_alignTop="@+id/respuestaAGeografiaGradoUno"
         android:layout_toRightOf="@+id/bG1"
-        android:layout_toEndOf="@+id/bG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="8dp"
         android:width="250dp"
         android:layout_alignBottom="@+id/bG1"
-        android:paddingTop="30dp" />
+        android:paddingTop="40dp"
+        android:layout_alignRight="@+id/respuestaDGeografiaGradoUno"
+        android:layout_alignEnd="@+id/respuestaDGeografiaGradoUno"
+        android:textSize="17dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -242,14 +245,16 @@
         android:text="New Text"
         android:id="@+id/respuestaCGeografiaGradoUno"
         android:layout_toRightOf="@+id/cG1"
-        android:layout_toEndOf="@+id/cG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="5dp"
         android:width="250dp"
         android:layout_below="@+id/blancoDosA"
         android:layout_alignBottom="@+id/cG1"
-        android:paddingTop="28dp" />
+        android:paddingTop="40dp"
+        android:layout_toLeftOf="@+id/blancoDosD"
+        android:layout_toStartOf="@+id/blancoDosD"
+        android:textSize="17dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -258,12 +263,14 @@
         android:id="@+id/respuestaDGeografiaGradoUno"
         android:layout_alignBottom="@+id/respuestaCGeografiaGradoUno"
         android:layout_toRightOf="@+id/dG1"
-        android:layout_toEndOf="@+id/dG1"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="8dp"
         android:width="250dp"
         android:layout_alignTop="@+id/respuestaCGeografiaGradoUno"
-        android:paddingTop="28dp" />
+        android:paddingTop="40dp"
+        android:layout_alignRight="@+id/enunciadoGeografiaGradoUno"
+        android:layout_alignEnd="@+id/enunciadoGeografiaGradoUno"
+        android:textSize="17dp" />
 
 </RelativeLayout>

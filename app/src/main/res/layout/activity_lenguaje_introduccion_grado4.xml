@@ -11,13 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/grado1"
-        android:layout_marginLeft="318dp"
-        android:layout_marginStart="274dp"
+        android:layout_marginLeft="405dp"
+        android:layout_marginStart="405dp"
         android:src="@drawable/grado4"
+        android:layout_marginTop="52dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginBottom="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -56,43 +57,42 @@
         android:src="@drawable/personajepregunta"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/blanco1"
-        android:layout_toStartOf="@+id/blanco1"
-        android:layout_marginBottom="10dp" />
+        android:layout_toStartOf="@+id/blanco1" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/verLecturaGrado1"
+        android:src="@drawable/verlectura1"
+        android:clickable="true"
+        android:onClick="mostrarLecturaModal"
         android:layout_below="@+id/blanco1"
         android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView"
-        android:src="@drawable/verlectura1"
-        android:layout_marginLeft="8dp"
-        android:clickable="true"
-        android:onClick="mostrarLecturaModal" />
+        android:layout_toEndOf="@+id/imageView" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/verPreguntasGrado1"
-        android:layout_below="@+id/blanco1"
-        android:layout_toRightOf="@+id/verLecturaGrado1"
-        android:layout_toEndOf="@+id/verLecturaGrado1"
         android:src="@drawable/verpreguntas1"
-        android:layout_marginLeft="-12dp"
-        android:onClick="irAPreguntas" />
+        android:onClick="irAPreguntas"
+        android:layout_alignBottom="@+id/verLecturaGrado1"
+        android:layout_alignRight="@+id/blanco1"
+        android:layout_alignEnd="@+id/blanco1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/lecturaLenguajeG4"
-        android:layout_marginLeft="47dp"
-        android:layout_marginStart="47dp"
-        android:layout_alignTop="@+id/imageView"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="44dp"
+        android:text="new Text"
+        android:layout_alignTop="@+id/blanco1"
         android:layout_alignLeft="@+id/verLecturaGrado1"
         android:layout_alignStart="@+id/verLecturaGrado1"
-        android:layout_marginTop="-20dp"
-        android:text="new Text" />
+        android:layout_marginTop="48dp"
+        android:layout_alignRight="@+id/menuGrado1"
+        android:layout_alignEnd="@+id/menuGrado1" />
 
 </RelativeLayout>

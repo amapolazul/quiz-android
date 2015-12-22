@@ -11,12 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/grado3"
-        android:layout_marginLeft="318dp"
+        android:layout_marginLeft="210dp"
         android:src="@drawable/grado4"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="210dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_toRightOf="@+id/manoArriba"
+        android:layout_toEndOf="@+id/manoArriba"
+        android:layout_marginBottom="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -76,32 +78,30 @@
         android:layout_height="wrap_content"
         android:id="@+id/blancoDosC"
         android:src="@drawable/blanco2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/blancoDosA"
-        android:layout_alignStart="@+id/blancoDosA"
-        android:onClick="responderConC" />
+        android:onClick="responderConC"
+        android:layout_below="@+id/blancoDosA"
+        android:layout_alignLeft="@+id/blanco1"
+        android:layout_alignStart="@+id/blanco1" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/blancoDosD"
         android:src="@drawable/blanco2"
-        android:layout_alignParentBottom="true"
+        android:onClick="responderConD"
+        android:layout_below="@+id/blancoDosA"
         android:layout_alignLeft="@+id/blancoDosB"
-        android:layout_alignStart="@+id/blancoDosB"
-        android:onClick="responderConD" />
+        android:layout_alignStart="@+id/blancoDosB" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/aG3"
-        android:layout_above="@+id/blancoDosC"
+        android:src="@drawable/ag4"
+        android:layout_alignTop="@+id/blancoDosA"
         android:layout_alignLeft="@+id/blancoDosA"
         android:layout_alignStart="@+id/blancoDosA"
-        android:src="@drawable/ag4"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginBottom="6dp" />
+        android:layout_marginLeft="15dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -136,20 +136,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/manoArriba"
         android:src="@drawable/manoarriba"
-        android:layout_alignBottom="@+id/blancoDosA"
+        android:layout_below="@+id/aG3"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="8dp" />
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/manoAbajo"
-        android:layout_below="@+id/manoArriba"
-        android:layout_alignLeft="@+id/manoArriba"
-        android:layout_alignStart="@+id/manoArriba"
         android:src="@drawable/manoabajo"
-        android:layout_marginTop="5dp" />
+        android:layout_below="@+id/manoArriba"
+        android:layout_toLeftOf="@+id/grado3"
+        android:layout_toStartOf="@+id/grado3"
+        android:paddingTop="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -157,9 +156,8 @@
         android:id="@+id/imageView"
         android:src="@drawable/personajepregunta"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/blanco1"
-        android:layout_toStartOf="@+id/blanco1"
-        android:layout_marginBottom="10dp" />
+        android:layout_toLeftOf="@+id/blancoDosA"
+        android:layout_toStartOf="@+id/blancoDosA" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -174,7 +172,7 @@
         android:layout_alignBottom="@+id/manoArriba"
         android:layout_alignLeft="@+id/imageView"
         android:layout_alignStart="@+id/imageView"
-        android:paddingBottom="5dp" />
+        android:paddingBottom="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -184,27 +182,30 @@
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#ffff057e"
-        android:layout_alignTop="@+id/manoAbajo"
+        android:paddingTop="5dp"
+        android:layout_alignBottom="@+id/manoAbajo"
         android:layout_alignLeft="@+id/contadorCorrectasGeografiaG4"
         android:layout_alignStart="@+id/contadorCorrectasGeografiaG4"
-        android:paddingTop="5dp" />
+        android:paddingBottom="10dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/enunciadoGeografiaG4"
-        android:textSize="22dp"
+        android:textSize="27dp"
         android:width="640dp"
         android:scrollbars = "vertical"
         android:maxLines="3"
         android:fadeScrollbars="false"
-        android:layout_toRightOf="@+id/aG3"
-        android:layout_toEndOf="@+id/aG3"
-        android:layout_below="@+id/menugrado3"
-        android:paddingTop="20dp"
+        android:paddingTop="30dp"
         android:textColor="#ff471cff"
-        android:layout_marginLeft="-45dp" />
+        android:layout_below="@+id/grado3"
+        android:layout_alignLeft="@+id/aG3"
+        android:layout_alignStart="@+id/aG3"
+        android:layout_alignRight="@+id/menugrado3"
+        android:layout_alignEnd="@+id/menugrado3"
+        android:paddingLeft="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -212,14 +213,16 @@
         android:text="New Text"
         android:id="@+id/respuestaAGeografiaG4"
         android:layout_toRightOf="@+id/aG3"
-        android:layout_toEndOf="@+id/aG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="5dp"
         android:width="270dp"
-        android:paddingTop="30dp"
+        android:paddingTop="40dp"
         android:layout_alignBottom="@+id/aG3"
-        android:layout_below="@+id/blanco1" />
+        android:layout_below="@+id/blanco1"
+        android:layout_toLeftOf="@+id/blancoDosB"
+        android:layout_toStartOf="@+id/blancoDosB"
+        android:textSize="17dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -228,13 +231,15 @@
         android:id="@+id/respuestaBGeografiaG4"
         android:layout_alignBottom="@+id/respuestaAGeografiaG4"
         android:layout_toRightOf="@+id/bG3"
-        android:layout_toEndOf="@+id/bG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="8dp"
         android:width="270dp"
         android:layout_alignTop="@+id/respuestaAGeografiaG4"
-        android:paddingTop="30dp" />
+        android:paddingTop="40dp"
+        android:layout_alignRight="@+id/enunciadoGeografiaG4"
+        android:layout_alignEnd="@+id/enunciadoGeografiaG4"
+        android:textSize="17dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -242,14 +247,16 @@
         android:text="New Text"
         android:id="@+id/respuestaCGeografiaG4"
         android:layout_toRightOf="@+id/cG3"
-        android:layout_toEndOf="@+id/cG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="8dp"
         android:width="270dp"
         android:layout_alignTop="@+id/respuestaDGeografiaG4"
         android:layout_alignBottom="@+id/cG3"
-        android:paddingTop="28dp" />
+        android:paddingTop="40dp"
+        android:layout_alignRight="@+id/respuestaAGeografiaG4"
+        android:layout_alignEnd="@+id/respuestaAGeografiaG4"
+        android:textSize="17dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -257,13 +264,15 @@
         android:text="New Text"
         android:id="@+id/respuestaDGeografiaG4"
         android:layout_toRightOf="@+id/dG3"
-        android:layout_toEndOf="@+id/dG3"
         android:textColor="#ff471cff"
         android:paddingLeft="5dp"
         android:paddingBottom="8dp"
         android:width="270dp"
         android:layout_below="@+id/blancoDosB"
         android:layout_alignBottom="@+id/dG3"
-        android:paddingTop="28dp" />
+        android:paddingTop="40dp"
+        android:layout_alignRight="@+id/respuestaBGeografiaG4"
+        android:layout_alignEnd="@+id/respuestaBGeografiaG4"
+        android:textSize="17dp" />
 
 </RelativeLayout>

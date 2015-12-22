@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="0dp"
     android:paddingRight="0dp"
-    android:paddingTop="0dp"
+    android:paddingTop="30dp"
     android:paddingBottom="0dp"
     tools:context="com.amapolazul.www.quizamapola.logica.preguntas.grado1.PreguntasCienciasGradoUno"
     android:background="@drawable/fondo">
@@ -11,13 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/grado1"
-        android:layout_marginLeft="318dp"
+        android:layout_marginLeft="428dp"
         android:layout_marginStart="274dp"
         android:src="@drawable/grado1"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -27,7 +28,8 @@
         android:layout_alignBottom="@+id/grado1"
         android:layout_toRightOf="@+id/grado1"
         android:layout_toEndOf="@+id/grado1"
-        android:layout_marginLeft="7dp" />
+        android:layout_marginLeft="7dp"
+        android:paddingBottom="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -38,7 +40,8 @@
         android:layout_toRightOf="@+id/lenguajeGradoUno"
         android:layout_toEndOf="@+id/lenguajeGradoUno"
         android:layout_marginLeft="7dp"
-        android:onClick="regresar" />
+        android:onClick="regresar"
+        android:paddingBottom="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -46,9 +49,9 @@
         android:id="@+id/blanco1"
         android:src="@drawable/blanco1"
         android:nestedScrollingEnabled="true"
-        android:layout_below="@+id/lenguajeGradoUno"
-        android:layout_alignLeft="@+id/grado1"
-        android:layout_alignStart="@+id/grado1" />
+        android:layout_below="@+id/grado1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -79,34 +82,34 @@
         android:layout_height="wrap_content"
         android:id="@+id/blancoDosC"
         android:src="@drawable/blanco2"
-        android:layout_alignParentBottom="true"
+        android:onClick="responderConC"
+        android:clickable="true"
+        android:layout_alignTop="@+id/blancoDosD"
         android:layout_alignLeft="@+id/blancoDosA"
         android:layout_alignStart="@+id/blancoDosA"
-        android:onClick="responderConC"
-        android:clickable="true" />
+        android:paddingTop="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/blancoDosD"
         android:src="@drawable/blanco2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/blancoDosB"
-        android:layout_alignStart="@+id/blancoDosB"
         android:onClick="responderConD"
-        android:clickable="true" />
+        android:clickable="true"
+        android:layout_below="@+id/bG1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/aG1"
-        android:layout_above="@+id/blancoDosC"
-        android:layout_alignLeft="@+id/blancoDosA"
-        android:layout_alignStart="@+id/blancoDosA"
         android:src="@drawable/ag1"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="-5dp"
-        android:layout_marginBottom="6dp" />
+        android:paddingLeft="15dp"
+        android:layout_alignTop="@+id/blancoDosA"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -123,9 +126,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/cG1"
         android:src="@drawable/cg1"
+        android:paddingTop="10dp"
         android:layout_alignTop="@+id/blancoDosC"
-        android:layout_alignLeft="@+id/aG1"
-        android:layout_alignStart="@+id/aG1" />
+        android:layout_toLeftOf="@+id/respuestaATexto"
+        android:layout_toStartOf="@+id/respuestaATexto" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -134,27 +138,26 @@
         android:src="@drawable/dg1"
         android:layout_alignTop="@+id/blancoDosC"
         android:layout_alignLeft="@+id/bG1"
-        android:layout_alignStart="@+id/bG1" />
+        android:layout_alignStart="@+id/bG1"
+        android:paddingTop="10dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/manoArriba"
         android:src="@drawable/manoarriba"
-        android:layout_alignBottom="@+id/blancoDosA"
+        android:layout_alignTop="@+id/blancoDosC"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="8dp" />
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/manoAbajo"
-        android:layout_below="@+id/manoArriba"
-        android:layout_alignLeft="@+id/manoArriba"
-        android:layout_alignStart="@+id/manoArriba"
         android:src="@drawable/manoabajo"
-        android:layout_marginTop="5dp" />
+        android:layout_alignBottom="@+id/cG1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -163,39 +166,42 @@
         android:src="@drawable/personajepregunta"
         android:layout_alignParentBottom="true"
         android:layout_toLeftOf="@+id/blanco1"
-        android:layout_toStartOf="@+id/blanco1"
-        android:layout_marginBottom="10dp" />
+        android:layout_toStartOf="@+id/blanco1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="text"
         android:id="@+id/enunciadoPregunta"
-        android:textSize="22dp"
-        android:width="650dp"
+        android:textSize="27dp"
+        android:width="700dp"
         android:scrollbars = "vertical"
         android:maxLines="7"
         android:fadeScrollbars="false"
-        android:paddingTop="20dp"
+        android:paddingTop="30dp"
         android:textColor="#ff471cff"
-        android:layout_below="@+id/lenguajeGradoUno"
+        android:text="text new"
+        android:layout_below="@+id/grado1"
         android:layout_alignRight="@+id/respuestaBTexto"
-        android:layout_alignEnd="@+id/respuestaBTexto" />
+        android:layout_alignEnd="@+id/respuestaBTexto"
+        android:layout_alignLeft="@+id/cG1"
+        android:layout_alignStart="@+id/cG1"
+        android:paddingLeft="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaATexto"
-        android:layout_toRightOf="@+id/aG1"
         android:paddingLeft="5dp"
         android:paddingBottom="10dp"
         android:textColor="#ff471cff"
         android:layout_toLeftOf="@+id/blancoDosB"
-        android:layout_toStartOf="@+id/blancoDosB"
         android:layout_below="@+id/blanco1"
         android:layout_alignBottom="@+id/aG1"
-        android:paddingTop="35dp" />
+        android:paddingTop="40dp"
+        android:layout_toEndOf="@+id/aG1"
+        android:layout_toRightOf="@+id/aG1"
+        android:textSize="17dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -203,63 +209,63 @@
         android:text="New Text"
         android:id="@+id/respuestaBTexto"
         android:layout_alignTop="@+id/respuestaATexto"
-        android:layout_toRightOf="@+id/bG1"
         android:paddingLeft="5dp"
-        android:textSize="15dp"
+        android:textSize="17dp"
         android:textColor="#ff471cff"
         android:layout_alignRight="@+id/menuGrado1"
         android:layout_alignEnd="@+id/menuGrado1"
         android:layout_alignBottom="@+id/bG1"
-        android:paddingTop="35dp" />
+        android:paddingTop="40dp"
+        android:layout_toRightOf="@+id/bG1"
+        android:layout_toEndOf="@+id/bG1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaCText"
-        android:layout_toRightOf="@+id/cG1"
         android:paddingLeft="5dp"
         android:paddingBottom="8dp"
-        android:textSize="15dp"
+        android:textSize="17dp"
         android:textColor="#ff471cff"
         android:layout_toLeftOf="@+id/blancoDosD"
-        android:layout_toStartOf="@+id/blancoDosD"
         android:width="250dp"
         android:layout_alignBottom="@+id/cG1"
         android:layout_below="@+id/blancoDosA"
-        android:paddingTop="28dp" />
+        android:paddingTop="40dp"
+        android:layout_toRightOf="@+id/cG1"
+        android:layout_toEndOf="@+id/cG1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/respuestaTextoD"
-        android:layout_toRightOf="@+id/dG1"
         android:paddingLeft="5dp"
-        android:textSize="15dp"
+        android:textSize="17dp"
         android:textColor="#ff471cff"
-        android:layout_alignRight="@+id/menuGrado1"
-        android:layout_alignEnd="@+id/menuGrado1"
         android:width="250dp"
-        android:layout_alignBottom="@+id/dG1"
-        android:layout_below="@+id/manoArriba"
         android:paddingBottom="8dp"
-        android:paddingTop="28dp" />
+        android:paddingTop="40dp"
+        android:layout_below="@+id/blancoDosB"
+        android:layout_toRightOf="@+id/dG1"
+        android:layout_alignRight="@+id/respuestaBTexto"
+        android:layout_alignEnd="@+id/respuestaBTexto"
+        android:layout_alignBottom="@+id/dG1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
         android:id="@+id/contadoCorrectasLenguajeG1"
-        android:layout_marginLeft="52dp"
-        android:layout_marginStart="52dp"
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#ffff057e"
-        android:layout_alignBottom="@+id/blancoDosA"
-        android:layout_alignLeft="@+id/manoArriba"
-        android:layout_alignStart="@+id/manoArriba"
-        android:paddingBottom="5dp"/>
+        android:paddingBottom="5dp"
+        android:paddingLeft="25dp"
+        android:layout_alignTop="@+id/respuestaCText"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -270,8 +276,9 @@
         android:layout_alignTop="@+id/manoAbajo"
         android:layout_alignLeft="@+id/contadoCorrectasLenguajeG1"
         android:layout_alignStart="@+id/contadoCorrectasLenguajeG1"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="12dp"
         android:textStyle="bold"
-        android:textColor="#ffff057e" />
+        android:textColor="#ffff057e"
+        android:paddingLeft="25dp" />
 
 </RelativeLayout>
