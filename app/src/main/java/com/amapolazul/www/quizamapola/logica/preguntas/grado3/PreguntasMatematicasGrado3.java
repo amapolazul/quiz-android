@@ -95,7 +95,7 @@ public class PreguntasMatematicasGrado3 extends Activity {
             ImageView image = (ImageView) findViewById(R.id.imagenMatematicasG3);
             Drawable drawable = getDrawableByName(url);
             image.setImageDrawable(drawable);
-            image.setVisibility(View.INVISIBLE);
+            image.setVisibility(View.VISIBLE);
         } else {
             ImageView image = (ImageView) findViewById(R.id.imagenMatematicasG3);
             image.setVisibility(View.INVISIBLE);
