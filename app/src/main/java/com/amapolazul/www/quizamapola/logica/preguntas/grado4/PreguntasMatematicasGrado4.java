@@ -2,6 +2,8 @@ package com.amapolazul.www.quizamapola.logica.preguntas.grado4;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
 import android.os.Handler;
 import android.os.Bundle;
@@ -80,6 +82,7 @@ public class PreguntasMatematicasGrado4 extends Activity {
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDMatematicasG4);
 
         enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br />")));
+        enunciado.scrollTo(0,0);
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());
@@ -88,11 +91,24 @@ public class PreguntasMatematicasGrado4 extends Activity {
     }
 
     private void inicializarImagen(String url) {
-        int loader = R.drawable.vacia;
-        ImageView image = (ImageView) findViewById(R.id.imagenMatematicasG4);
-        String image_url = url;
-        ImageLoader imgLoader = new ImageLoader(getApplicationContext());
-        imgLoader.DisplayImage(image_url, loader, image);
+        if(!url.equals("NA")){
+            ImageView image = (ImageView) findViewById(R.id.imagenMatematicasG4);
+            Drawable drawable = getDrawableByName(url);
+            image.setImageDrawable(drawable);
+            image.setVisibility(View.VISIBLE);
+        } else {
+            ImageView image = (ImageView) findViewById(R.id.imagenMatematicasG4);
+            image.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    private Drawable getDrawableByName(String name){
+        System.out.println("recurso " + name);
+        Resources res = getResources();
+        String mDrawableName = name;
+        int resID = res.getIdentifier(mDrawableName , "drawable", getPackageName());
+        Drawable drawable = res.getDrawable(resID );
+        return drawable;
     }
 
     public void responderConA(View view) throws InterruptedException {

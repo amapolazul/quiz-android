@@ -102,6 +102,7 @@ public class PreguntasGeografiaGradoUno extends Activity {
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDGeografiaGradoUno);
 
         enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br />")));
+        enunciado.scrollTo(0,0);
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());

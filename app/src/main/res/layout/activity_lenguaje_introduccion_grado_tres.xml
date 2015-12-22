@@ -88,10 +88,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/textoLecturaPreguntasG1"
-        android:layout_alignTop="@+id/blanco1"
+        android:layout_marginLeft="40dp"
+        android:layout_alignTop="@+id/imageView"
         android:layout_alignLeft="@+id/verLecturaGrado1"
         android:layout_alignStart="@+id/verLecturaGrado1"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="35dp" />
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="-20dp" />
 
 </RelativeLayout>

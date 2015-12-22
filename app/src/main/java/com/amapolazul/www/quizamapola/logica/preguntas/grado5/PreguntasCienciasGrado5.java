@@ -79,6 +79,7 @@ public class PreguntasCienciasGrado5 extends Activity {
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDCienciasG5);
 
         enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br />")));
+        enunciado.scrollTo(0,0);
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());
