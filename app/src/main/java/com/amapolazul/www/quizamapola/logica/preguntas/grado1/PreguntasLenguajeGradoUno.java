@@ -115,10 +115,16 @@ public class PreguntasLenguajeGradoUno extends Activity {
         TextView respuestaD = (TextView) findViewById(R.id.respuestaDLenguajeG1);
 
         enunciado.setText(preguntaActual.getEnunciado().replace("<br>", Html.fromHtml("<br />")));
+        enunciado.scrollTo(0,0);
         respuestaA.setText(preguntaActual.getRespuestaA());
         respuestaB.setText(preguntaActual.getRespuestaB());
         respuestaC.setText(preguntaActual.getRespuestaC());
         respuestaD.setText(preguntaActual.getRespuestaD());
+
+        if(preguntaActual.getLectura().equals("NA")){
+            ImageView imagenLectura = (ImageView) findViewById(R.id.verlectura2G1);
+            imagenLectura.setVisibility(View.INVISIBLE);
+        }
     }
 
     public void responderConA(View view) throws InterruptedException {

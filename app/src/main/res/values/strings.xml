@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">QuizAmapola</string>
+    <string name="app_name">Quiz</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_intro_uno">IntroUno</string>
+    <string name="title_activity_intro_uno">Quiz</string>
     <string name="title_activity_intro_dos">IntroDos</string>
     <string name="title_activity_intro_tres">IntroTres</string>
     <string name="title_activity_menu_categorias">MenuCategorias</string>

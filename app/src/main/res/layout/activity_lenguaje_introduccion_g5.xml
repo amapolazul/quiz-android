@@ -88,10 +88,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="New Text"
         android:id="@+id/lecturaLenguajeG5"
-        android:layout_above="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
         android:layout_alignLeft="@+id/verLecturaGrado1"
         android:layout_alignStart="@+id/verLecturaGrado1"
-        android:layout_marginLeft="58dp"
-        android:layout_marginStart="58dp" />
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-20dp" />
 
 </RelativeLayout>
